@@ -10,7 +10,6 @@ label {
     color: var(--white);
     margin: .7em 0;
     font-weight: bold;
-    font-family: sans-serif;
 }
 
 input, textarea {
@@ -18,4 +17,5 @@ input, textarea {
     border: solid 2px var(--green);
     background-color: var(--white);
     padding: 3px;
+    width: 100%;
 }
