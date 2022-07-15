@@ -19,3 +19,7 @@ input, textarea {
     padding: 3px;
     width: 100%;
 }
+
+.contact {
+    padding: 0;
+}
