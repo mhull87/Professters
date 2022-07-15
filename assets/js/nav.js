@@ -5,7 +5,7 @@ var links = [{ label: 'link1', bg: '#c0392b' },
 { label: 'link5', bg: '#f39c12' },
 { label: 'link6', bg: '#2980b9' }];
 var windowHeight = window.innerHeight;
-if (windowHeight === 0) windowHeight = 238;
+if (windowHeight === 0) windowHeight = 50;
 var radius = windowHeight * 0.6,
     circle = document.createElement('div'),
     borderSize = radius * 0.021;
