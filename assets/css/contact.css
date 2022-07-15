@@ -7,4 +7,12 @@
 
 label {
     display: block;
+    color: var(--white);
+    margin-bottom: .7em;
+}
+
+input {
+    border-radius: 8px;
+    border: solid 2px var(--green);
+    background-color: var(--white);
 }
