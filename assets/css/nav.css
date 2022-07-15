@@ -19,48 +19,51 @@ nav a {
     display: none;
 }
 
-a:nth-child(1) {
-    color: var(--green);
-}
+@media screen and (max-width: 614px) {
+    a:nth-child(1) {
+        color: var(--green);
+    }
 
-a:nth-child(2) {
-    color: var(--red);
-}
+    a:nth-child(2) {
+        color: var(--red);
+    }
 
-a:nth-child(3) {
-    color: var(--blue);
-}
+    a:nth-child(3) {
+        color: var(--blue);
+    }
 
-a:nth-child(4) {
-    color: var(--purple);
-}
+    a:nth-child(4) {
+        color: var(--purple);
+    }
 
-a:nth-child(5) {
-    color: var(--orange);
-}
+    a:nth-child(5) {
+        color: var(--orange);
+    }
 
-a:hover {
-    border-radius: 8px;
-}
+    a:hover {
+        border-radius: 8px;
+        color: white;
+    }
 
-a:nth-child(1):hover {
-    background-color: var(--green);
-}
+    a:nth-child(1):hover {
+        background-color: var(--green);
+    }
 
-a:nth-child(2):hover {
-    background-color: var(--red);
-}
+    a:nth-child(2):hover {
+        background-color: var(--red);
+    }
 
-a:nth-child(3):hover {
-    background-color: var(--blue);
-}
+    a:nth-child(3):hover {
+        background-color: var(--blue);
+    }
 
-a:nth-child(4):hover {
-    background-color: var(--purple);
-}
+    a:nth-child(4):hover {
+        background-color: var(--purple);
+    }
 
-a:nth-child(5):hover {
-    background-color: var(--orange);
+    a:nth-child(5):hover {
+        background-color: var(--orange);
+    }
 }
 
 @media screen and (min-width: 615px) {
