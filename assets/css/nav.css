@@ -41,6 +41,7 @@ nav a {
     }
 
     a:hover {
+        padding: 0 20px;
         border-radius: 8px;
         color: white;
     }
