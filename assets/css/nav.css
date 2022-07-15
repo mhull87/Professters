@@ -12,10 +12,15 @@ nav a {
     text-decoration: none;
     line-height: 50px;
     text-transform: uppercase;
+    font-size: small;
 }
 
 .animation {
     display: none;
+}
+
+a:hover {
+    border-radius: 8px;
 }
 
 a:nth-child(1):hover {
@@ -23,11 +28,19 @@ a:nth-child(1):hover {
 }
 
 a:nth-child(2):hover {
-    background-color: #e74c3c;
+    background-color: var(--red);
 }
 
 a:nth-child(3):hover {
-    background-color: #3498db;
+    background-color: var(--blue);
+}
+
+a:nth-child(4):hover {
+    background-color: var(--purple);
+}
+
+a:nth-child(5):hover {
+    background-color: var(--orange);
 }
 
 @media screen and (min-width: 615px) {
