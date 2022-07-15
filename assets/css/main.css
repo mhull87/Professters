@@ -1,3 +1,7 @@
+:root {
+    --green: #1abc9c;
+}
+
 body {
     font-size: 12px;
     font-family: sans-serif;

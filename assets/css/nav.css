@@ -4,37 +4,47 @@ nav {
     font-size: medium;
     background-color: #34495e;
     border-radius: 8px;
+    margin: 27px auto 0;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    line-height: 50px;
+    text-transform: uppercase;
 }
 
 .animation {
     display: none;
 }
 
+a:nth-child(1):hover {
+    background-color: var(--green);
+}
+
+a:nth-child(2):hover {
+    background-color: #e74c3c;
+}
+
+a:nth-child(3):hover {
+    background-color: #3498db;
+}
+
 @media screen and (min-width: 615px) {
     nav {
-    margin: 27px auto 0;
     position: relative;
     width: 590px;
     height: 50px;
 }
 
     nav a {
-        line-height: 50px;
         height: 100%;
         font-size: 15px;
         display: inline-block;
         position: relative;
         z-index: 1;
         text-decoration: none;
-        text-transform: uppercase;
         text-align: center;
-        color: white;
-        cursor: pointer;
     }
 
     nav .animation {
