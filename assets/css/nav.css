@@ -7,141 +7,140 @@ nav {
     margin: 27px auto 0;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    line-height: 50px;
-    text-transform: uppercase;
-    font-size: small;
-}
+    nav a {
+        color: white;
+        text-decoration: none;
+        line-height: 50px;
+        text-transform: uppercase;
+        font-size: small;
+    }
 
 .animation {
     display: none;
 }
 
 @media screen and (max-width: 614px) {
-    a:nth-child(1) {
+    nav a:nth-child(1) {
         color: var(--green);
     }
 
-    a:nth-child(2) {
+    nav a:nth-child(2) {
         color: var(--red);
     }
 
-    a:nth-child(3) {
+    nav a:nth-child(3) {
         color: var(--blue);
     }
 
-    a:nth-child(4) {
+    nav a:nth-child(4) {
         color: var(--purple);
     }
 
-    a:nth-child(5) {
+    nav a:nth-child(5) {
         color: var(--orange);
     }
 
-    a:hover {
+    nav a:hover {
         padding: 0 20px;
         border-radius: 8px;
         color: white;
     }
 
-    a:nth-child(1):hover {
+    nav a:nth-child(1):hover {
         background-color: var(--green);
     }
 
-    a:nth-child(2):hover {
+    nav a:nth-child(2):hover {
         background-color: var(--red);
     }
 
-    a:nth-child(3):hover {
+    nav a:nth-child(3):hover {
         background-color: var(--blue);
     }
 
-    a:nth-child(4):hover {
+    nav a:nth-child(4):hover {
         background-color: var(--purple);
     }
 
-    a:nth-child(5):hover {
+    nav a:nth-child(5):hover {
         background-color: var(--orange);
     }
 }
 
 @media screen and (min-width: 615px) {
     nav {
-    position: relative;
-    width: 590px;
-    height: 50px;
-}
-
-    nav a {
-        height: 100%;
-        font-size: 15px;
-        display: inline-block;
         position: relative;
-        z-index: 1;
-        text-decoration: none;
-        text-align: center;
+        width: 590px;
+        height: 50px;
     }
 
-    nav .animation {
-        display: inline-block;
-        position: absolute;
-        height: 100%;
-        top: 0;
-        z-index: 0;
-        transition: all .5s ease 0s;
-        border-radius: 8px;
-    }
+        nav a {
+            height: 100%;
+            font-size: 15px;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            text-decoration: none;
+            text-align: center;
+        }
 
-a:nth-child(1) {
-    width: 100px;
-}
+        nav .animation {
+            display: inline-block;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            z-index: 0;
+            transition: all .5s ease 0s;
+            border-radius: 8px;
+        }
 
-a:nth-child(2) {
-    width: 110px;
-}
+        nav a:nth-child(1) {
+            width: 100px;
+        }
 
-a:nth-child(3) {
-    width: 100px;
-}
+        nav a:nth-child(2) {
+            width: 110px;
+        }
 
-a:nth-child(4) {
-    width: 160px;
-}
+        nav a:nth-child(3) {
+            width: 100px;
+        }
 
-a:nth-child(5) {
-    width: 120px;
-}
+        nav a:nth-child(4) {
+            width: 160px;
+        }
 
-nav .start-home, a:nth-child(1):hover ~ .animation {
-    width: 100px;
-    left: 0;
-    background-color: var(--green);
-}
+        nav a:nth-child(5) {
+            width: 120px;
+        }
 
-nav .start-about, a:nth-child(2):hover ~ .animation {
-    width: 110px;
-    left: 100px;
-    background-color: var(--red);
-}
+        nav .start-home, nav a:nth-child(1):hover ~ .animation {
+            width: 100px;
+            left: 0;
+            background-color: var(--green);
+        }
 
-nav .start-blog, a:nth-child(3):hover ~ .animation {
-    width: 100px;
-    left: 210px;
-    background-color: var(--blue);
-}
+        nav .start-about, nav a:nth-child(2):hover ~ .animation {
+            width: 110px;
+            left: 100px;
+            background-color: var(--red);
+        }
 
-nav .start-portefolio, a:nth-child(4):hover ~ .animation {
-    width: 160px;
-    left: 310px;
-    background-color: var(--purple);
-}
+        nav .start-blog, nav a:nth-child(3):hover ~ .animation {
+            width: 100px;
+            left: 210px;
+            background-color: var(--blue);
+        }
 
-nav .start-contact, a:nth-child(5):hover ~ .animation {
-    width: 120px;
-    left: 470px;
-    background-color: var(--orange);
-}
-}
+        nav .start-portefolio, nav a:nth-child(4):hover ~ .animation {
+            width: 160px;
+            left: 310px;
+            background-color: var(--purple);
+        }
 
+        nav .start-contact, nav a:nth-child(5):hover ~ .animation {
+            width: 120px;
+            left: 470px;
+            background-color: var(--orange);
+        }
+}
