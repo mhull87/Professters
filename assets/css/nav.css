@@ -19,7 +19,7 @@ nav {
     display: none;
 }
 
-@media screen and (max-width: 614px) {
+@media screen and (max-width: 615px) {
     nav a:nth-child(1) {
         color: var(--green);
     }
