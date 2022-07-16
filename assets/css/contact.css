@@ -24,10 +24,13 @@ input, textarea {
     padding: 0;
 }
 
-.icons li a {
+.icons {
     padding: 0;
-    color: var(--blue);
 }
+
+    .icons li a {
+        color: var(--blue);
+    }
 
 .red {
     color: var(--red);
