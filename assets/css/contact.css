@@ -24,7 +24,7 @@ input, textarea {
     padding: 0;
 }
 
-.icons {
+.icons li a {
     padding: 0;
     color: var(--blue);
 }
