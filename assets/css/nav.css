@@ -40,13 +40,13 @@ nav {
         color: var(--orange);
     }
 
-    nav a:hover {
+    nav a:hover, nav a:active {
         padding: 0 20px;
         border-radius: 8px;
         color: white;
     }
 
-    nav a:nth-child(1):hover {
+    nav a:nth-child(1):hover, nav a:nth-child(1):active {
         background-color: var(--green);
     }
 
