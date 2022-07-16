@@ -77,6 +77,10 @@ img {
     border-radius: 8px;
 }
 
-#one, #three {
+#one, #two, #three {
     padding: 3em 2em 1em;
+}
+
+.nopad {
+    padding: 0;
 }
