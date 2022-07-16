@@ -73,4 +73,10 @@ li {
 
 img {
     width: 100%;
+    border: solid 2px var(--green);
+    border-radius: 8px;
+}
+
+#one, #three {
+    padding: 3em 2em 1em;
 }
