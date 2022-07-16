@@ -45,6 +45,11 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
 .button {
     background-color: initial;
     background-image: linear-gradient(-180deg, var(--orange), #E62C03);
