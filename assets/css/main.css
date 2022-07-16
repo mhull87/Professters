@@ -18,10 +18,16 @@ section {
 }
 
 h1 {
-    margin: 40px 0 40px;
+    margin: 1.5em 0 0;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.5em;
     text-shadow: 2px 2px 4px #000000;
+}
+
+@media screen and (min-width: 615px) {
+    h1 {
+        font-size: 3em;
+    }
 }
 
 h1, h2, h3, .button {
