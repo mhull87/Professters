@@ -9,7 +9,7 @@
 }
 
 /*FONT*/
-h1, h2, h3, .button {
+h1, h2, h3, .button, .font {
     font-family: ethnocentric,sans-serif;
     font-weight: 200;
     font-style: normal;
