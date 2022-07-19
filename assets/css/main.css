@@ -78,7 +78,6 @@ a {
     z-index: 9;
     border: 0;
     transition: box-shadow .2s;
-    max-width: 615px;
 }
 
     .button:hover {
@@ -138,4 +137,16 @@ img {
         gap: 3em;
     }
 
+    .form {
+        width: 65%;
+    }
+
+    #contactinfo {
+        border-left: 2px solid var(--purple);
+        padding-left: 2em;
+    }
+
+    textarea {
+        resize: none;
+    }
 }
