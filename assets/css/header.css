@@ -118,6 +118,26 @@ nav {
         font-size: 4em;
     }
 
+    #activehome {
+        color: var(--green);
+    }
+
+    #activedonate {
+        color: var(--red);
+    }
+
+    #activejoin {
+        color: var(--blue);
+    }
+
+    #activecards {
+        color: var(--purple);
+    }
+
+    #activecontact {
+        color: var(--orange);
+    }
+
     nav {
         position: relative;
         width: 590px;
