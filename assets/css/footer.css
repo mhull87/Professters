@@ -3,4 +3,5 @@ footer {
     padding: 2em;
     margin: 6em 2% 2%;
     display: flex;
+    justify-content: space-between;
 }
