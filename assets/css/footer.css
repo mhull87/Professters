@@ -1,0 +1,6 @@
+footer {
+    border-top: 2px solid var(--purple);
+    padding: 2em;
+    margin: 6em 2% 2%;
+    display: flex;
+}
