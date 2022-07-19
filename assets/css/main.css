@@ -121,11 +121,21 @@ img {
 }
 
 @media screen and (min-width: 615px) {
-    .allcontact {
-        display: flex;
-    }
 
     .half {
         display: flex;
+        gap: 3em;
     }
+
+    .halfwidth {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .allcontact {
+        display: flex;
+        gap: 3em;
+    }
+
 }
