@@ -89,7 +89,7 @@ img {
     padding: 2em;
 }
 
-#one, #two, #three {
+.one, .two, .three {
     padding: 3em 2em 1em;
 }
 
