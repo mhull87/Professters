@@ -49,8 +49,20 @@ nav {
         background-color: var(--green);
     }
 
+    #activedonate {
+        background-color: var(--red);
+    }
+
     #activejoin {
         background-color: var(--blue);
+    }
+
+    #activecards {
+        background-color: var(--purple);
+    }
+
+    #activecontact {
+        background-color: var(--orange);
     }
 
     nav a:nth-child(1) {
@@ -73,7 +85,7 @@ nav {
         color: var(--orange);
     }
 
-    nav a:hover, #activehome {
+    nav a:hover, #activehome, #activedonate, #activejoin, #activecards, #activecontact {
         padding: 0 20px;
         border-radius: 8px;
         color: var(--white);
