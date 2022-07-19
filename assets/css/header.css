@@ -1,3 +1,28 @@
+#signin {
+    text-align: right;
+    margin-right: 2%;
+}
+
+    #signin a {
+        background-color: initial;
+        background-image: linear-gradient(-180deg, var(--blue), #082f80);
+        width: auto;
+        height: 20px;
+        line-height: 20px;
+    }
+
+        #signin a:hover {
+            box-shadow: rgba(39, 119, 245, 0.8) 0 3px 8px;
+        }
+
+
+h1 {
+    margin: 1.5em 0 0;
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px #000000;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -22,6 +47,10 @@ nav {
 @media screen and (max-width: 615px) {
     #activehome {
         background-color: var(--green);
+    }
+
+    #activejoin {
+        background-color: var(--blue);
     }
 
     nav a:nth-child(1) {
@@ -72,6 +101,11 @@ nav {
 }
 
 @media screen and (min-width: 615px) {
+
+  h1 {
+        font-size: 4em;
+    }
+
     nav {
         position: relative;
         width: 590px;
@@ -147,4 +181,11 @@ nav {
             left: 470px;
             background-color: var(--orange);
         }
+}
+
+@media screen and (min-width: 975px) {
+
+    h1 {
+        font-size: 6em;
+    }
 }

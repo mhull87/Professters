@@ -1,3 +1,4 @@
+/*COLORS*/
 :root {
     --white: #ecf0f1;
     --green: #1abc9c;
@@ -5,6 +6,14 @@
     --blue: #3498db;
     --purple: #9b59b6;
     --orange: #e67e22;
+}
+
+/*FONT*/
+h1, h2, h3, .button {
+    font-family: ethnocentric,sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: var(--white);
 }
 
 body {
@@ -17,24 +26,6 @@ body {
 
 section {
     padding-top: 1em;
-}
-
-h1 {
-    margin: 1.5em 0 0;
-    text-align: center;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 4px #000000;
-}
-
-@media screen and (min-width: 615px) {
-
-}
-
-h1, h2, h3, .button {
-    font-family: ethnocentric,sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    color: var(--white);
 }
 
 p {
@@ -86,22 +77,6 @@ a {
     padding: 0;
 }
 
-#signin {
-    text-align: right;
-}
-
-    #signin a {
-        background-color: initial;
-        background-image: linear-gradient(-180deg, var(--blue), #082f80);
-        width: auto;
-        height: 20px;
-        line-height: 20px;
-    }
-
-        #signin a:hover {
-            box-shadow: rgba(39, 119, 245, 0.8) 0 3px 8px;
-        }
-
 img {
     width: 100%;
     border: solid 2px var(--green);
@@ -119,51 +94,12 @@ img {
 
 @media screen and (min-width: 615px) {
 
-    h1 {
-        font-size: 4em;
-    }
-
     h2 {
         font-size: 2em;
-    }
-
-    .half {
-        display: flex;
-        gap: 3em;
-    }
-
-    .halfwidth {
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: 800px) {
-
-    .allcontact {
-        display: flex;
-        gap: 3em;
-    }
-
-    .form {
-        width: 65%;
-    }
-
-    #contactinfo {
-        border-left: 2px solid var(--purple);
-        padding-left: 3em;
-        margin-left: 2em;
-    }
-
-    textarea {
-        resize: none;
     }
 }
 
 @media screen and (min-width: 975px) {
-
-    h1 {
-        font-size: 6em;
-    }
 
     h2 {
         font-size: 3em;

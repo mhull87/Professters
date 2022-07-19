@@ -28,3 +28,37 @@ input, textarea {
 .red {
     color: var(--red);
 }
+
+@media screen and (min-width: 615px) {
+
+    .half {
+        display: flex;
+        gap: 3em;
+    }
+
+    .halfwidth {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .allcontact {
+        display: flex;
+        gap: 3em;
+    }
+
+    .form {
+        width: 65%;
+    }
+
+    #contactinfo {
+        border-left: 2px solid var(--purple);
+        padding-left: 3em;
+        margin-left: 2em;
+    }
+
+    textarea {
+        resize: none;
+    }
+}
