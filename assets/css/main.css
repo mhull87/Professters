@@ -92,15 +92,18 @@ img {
     padding: 3em 2em 1em;
 }
 
-@media screen and (min-width: 615px) {
+.backimg {
+    background-image: url(assets/images/pplkonnekt.jpg);
+    opacity: .75;
+}
 
+@media screen and (min-width: 615px) {
     h2 {
         font-size: 2em;
     }
 }
 
 @media screen and (min-width: 975px) {
-
     h2 {
         font-size: 3em;
     }
