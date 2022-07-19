@@ -27,9 +27,7 @@ h1 {
 }
 
 @media screen and (min-width: 615px) {
-    h1 {
-        font-size: 4em;
-    }
+
 }
 
 h1, h2, h3, .button {
@@ -121,6 +119,14 @@ img {
 
 @media screen and (min-width: 615px) {
 
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
     .half {
         display: flex;
         gap: 3em;
@@ -132,6 +138,7 @@ img {
 }
 
 @media screen and (min-width: 800px) {
+
     .allcontact {
         display: flex;
         gap: 3em;
@@ -143,10 +150,22 @@ img {
 
     #contactinfo {
         border-left: 2px solid var(--purple);
-        padding-left: 2em;
+        padding-left: 3em;
+        margin-left: 2em;
     }
 
     textarea {
         resize: none;
+    }
+}
+
+@media screen and (min-width: 975px) {
+
+    h1 {
+        font-size: 6em;
+    }
+
+    h2 {
+        font-size: 3em;
     }
 }
