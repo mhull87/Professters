@@ -40,6 +40,10 @@ input, textarea {
     border-radius: 8px;
 }
 
+.modal-dialog {
+    padding: 10px 0;
+}
+
 .loginmodal-container {
     padding: 30px;
     max-width: 350px;
@@ -50,8 +54,8 @@ input, textarea {
     overflow: hidden;
 }
 
-    .loginmodal-container h1 {
-        text-align: center;
+    .loginmodal-container h2 {
+        color: var(--purple);
         font-size: 1.8em;
     }
 
