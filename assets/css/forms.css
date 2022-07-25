@@ -40,15 +40,11 @@ input, textarea {
     border-radius: 8px;
 }
 
-.modal-dialog {
-    padding: 10px 0;
-}
-
 .loginmodal-container {
     padding: 30px;
     max-width: 350px;
     background-color: var(--white);
-    margin: 0 auto;
+    margin: 10px auto;
     border-radius: 2px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -57,6 +53,7 @@ input, textarea {
     .loginmodal-container h2 {
         color: var(--purple);
         font-size: 1.8em;
+        text-align: center;
     }
 
     .loginmodal-container a {
@@ -74,7 +71,6 @@ input, textarea {
 }
 
 @media screen and (min-width: 615px) {
-
     .half {
         display: flex;
         gap: 3em;
@@ -86,7 +82,6 @@ input, textarea {
 }
 
 @media screen and (min-width: 800px) {
-
     .allcontact {
         display: flex;
         gap: 3em;
@@ -106,4 +101,3 @@ input, textarea {
         resize: none;
     }
 }
-
