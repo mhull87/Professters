@@ -103,10 +103,6 @@ img {
     gap: 1em;
 }
 
-#state {
-    border: 
-}
-
 @media screen and (min-width: 615px) {
     h2 {
         font-size: 2em;
