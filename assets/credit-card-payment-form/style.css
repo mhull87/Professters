@@ -1,7 +1,6 @@
 #ccbody {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -21,7 +20,6 @@
 
 .payment-title {
     width: 100%;
-    text-align: center;
 }
 
 .form-container .field-container:first-of-type {
