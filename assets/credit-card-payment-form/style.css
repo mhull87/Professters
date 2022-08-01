@@ -73,7 +73,7 @@
     -o-transition: none !important;
 }
 
-.container {
+.CCcontainer {
     width: 100%;
     max-width: 400px;
     max-height: 251px;
