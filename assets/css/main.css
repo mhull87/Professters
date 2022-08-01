@@ -104,7 +104,7 @@ img {
 }
 
 /*GRID*/
-.container {
+.cardAContainer {
     display: grid;
     grid-template-areas:
         ". . . . cardAImg"
