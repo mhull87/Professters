@@ -126,9 +126,9 @@ img {
 /*CARD GRID*/
 @media screen and (min-width: 775px) {
     /*GRID*/
-    .cardsContainer {
+    .container {
         display: grid;
-        grid-template-columns: fit-content()
+        grid-template-columns: 3fr 2fr 2fr;
     }
 }
 
