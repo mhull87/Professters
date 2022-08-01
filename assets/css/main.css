@@ -103,6 +103,15 @@ img {
     max-width: 300px;
 }
 
+/*GRID*/
+.container {
+    display: grid;
+    grid-template-areas:
+        ". . . . cardAImg"
+        "cardATitle cardATitle cardAP cardAP cardAImg"
+        ". . . . cardAImg";
+}
+
 .one, .two, .three {
     padding: 3em 2em 1em;
 }
