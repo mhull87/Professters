@@ -98,6 +98,11 @@ img {
     margin-right: -18px;
 }
 
+.imgcard {
+    border: none;
+    max-width: 300px;
+}
+
 .one, .two, .three {
     padding: 3em 2em 1em;
 }
