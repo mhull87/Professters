@@ -103,15 +103,6 @@ img {
     max-width: 300px;
 }
 
-/*GRID*/
-.cardAContainer {
-    display: grid;
-    grid-template-areas:
-        ". . . . cardAImg"
-        "cardATitle cardATitle cardAP cardAP cardAImg"
-        ". . . . cardAImg";
-}
-
 .one, .two, .three {
     padding: 3em 2em 1em;
 }
@@ -129,6 +120,15 @@ img {
 @media screen and (min-width: 615px) {
     h2 {
         font-size: 2em;
+    }
+}
+
+/*CARD GRID*/
+@media screen and (min-width: 775px) {
+    /*GRID*/
+    .cardsContainer {
+        display: grid;
+        grid-template-columns: fit-content()
     }
 }
 
