@@ -85,7 +85,6 @@ a {
     .donate a {
         background-color: initial;
         background-image: linear-gradient(-180deg, var(--red), #a8362a);
-        width: auto;
     }
 
         .donate a:hover {
@@ -123,6 +122,10 @@ img {
 
 #imgcardI {
     margin-right: -35px;
+}
+
+.img350 {
+    max-width: 350px;
 }
 
 .one, .two, .three {
