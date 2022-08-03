@@ -3,18 +3,18 @@ header {
     padding: 2em;
 }
 
-#signin {
+.signin {
     text-align: right;
     margin-right: 2%;
 }
 
-    #signin a {
+    .signin a {
         background-color: initial;
         background-image: linear-gradient(-180deg, var(--blue), #082f80);
         width: auto;
     }
 
-        #signin a:hover {
+        .signin a:hover {
             box-shadow: rgba(39, 119, 245, 0.5) 0 3px 8px;
         }
 
@@ -64,7 +64,7 @@ nav {
         background-color: var(--blue);
     }
 
-    #activecards {
+    #activecubes {
         background-color: var(--purple);
     }
 
@@ -92,7 +92,7 @@ nav {
         color: var(--orange);
     }
 
-    nav a:hover, #activehome, #activedonate, #activejoin, #activecards, #activecontact {
+    nav a:hover, #activehome, #activedonate, #activejoin, #activecubes, #activenfts {
         padding: 0 20px;
         border-radius: 8px;
         color: var(--white);
@@ -136,11 +136,11 @@ nav {
         color: var(--blue);
     }
 
-    #activecards {
+    #activecubes {
         color: var(--purple);
     }
 
-    #activecontact {
+    #activenfts {
         color: var(--orange);
     }
 
@@ -235,13 +235,13 @@ footer {
     justify-content: space-between;
 }
 
-#contactbtn {
+.contactbtn {
     background-color: initial;
     background-image: linear-gradient(-180deg, var(--purple), #714195);
     width: auto;
 }
 
-#contactbtn:hover {
+.contactbtn:hover {
     box-shadow: rgba(215, 123, 252, 0.5) 0 3px 8px;
 }
 
