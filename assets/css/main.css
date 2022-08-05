@@ -44,6 +44,10 @@ a {
     color: var(--white);
 }
 
+.underline {
+    text-decoration: underline wavy var(--purple);
+}
+
 .right {
     text-align: right;
 }
@@ -171,13 +175,12 @@ img {
     .examplecontainer {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 4em;
+        gap: 5em;
     }
 
     .examplecontainers {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-items: start;
         gap: 2em;
     }
 }
