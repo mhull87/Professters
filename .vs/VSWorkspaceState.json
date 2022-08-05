@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\assets\\css",
+    "\\assets\\images"
   ],
-  "SelectedNode": "\\C:\\Users\\Melis\\OneDrive\\Desktop\\Professters",
+  "SelectedNode": "\\assets\\css\\headerfooter.css",
   "PreviewInSolutionExplorer": false
 }

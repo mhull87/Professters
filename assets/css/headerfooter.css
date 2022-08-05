@@ -60,11 +60,11 @@ nav {
         background-color: var(--blue);
     }
 
-    #activecubes {
+    #activenfts {
         background-color: var(--purple);
     }
 
-    #activenfts {
+    #activecontact {
         background-color: var(--orange);
     }
 
@@ -88,7 +88,7 @@ nav {
         color: var(--orange);
     }
 
-    nav a:hover, #activehome, #activedonate, #activejoin, #activecubes, #activenfts {
+    nav a:hover, #activehome, #activedonate, #activejoin, #activecontact, #activenfts {
         padding: 0 20px;
         border-radius: 8px;
         color: var(--white);
@@ -132,17 +132,17 @@ nav {
         color: var(--blue);
     }
 
-    #activecubes {
+    #activenfts {
         color: var(--purple);
     }
 
-    #activenfts {
+    #activecontact {
         color: var(--orange);
     }
 
     nav {
         position: relative;
-        width: 570px;
+        width: 580px;
         height: 50px;
     }
 
@@ -178,11 +178,11 @@ nav {
         }
 
         nav a:nth-child(4) {
-            width: 150px;
+            width: 100px;
         }
 
         nav a:nth-child(5) {
-            width: 100px;
+            width: 160px;
         }
 
         nav .start-home, nav a:nth-child(1):hover ~ .animation {
@@ -204,14 +204,14 @@ nav {
         }
 
         nav .start-portefolio, nav a:nth-child(4):hover ~ .animation {
-            width: 150px;
+            width: 100px;
             left: 320px;
             background-color: var(--purple);
         }
 
         nav .start-contact, nav a:nth-child(5):hover ~ .animation {
-            width: 100px;
-            left: 470px;
+            width: 160px;
+            left: 420px;
             background-color: var(--orange);
         }
 }
