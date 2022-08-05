@@ -44,6 +44,10 @@ a {
     color: var(--white);
 }
 
+.right {
+    text-align: right;
+}
+
 /*BUTTON*/
 .button {
     background-color: initial;
@@ -167,12 +171,14 @@ img {
     .examplecontainer {
         display: grid;
         grid-template-columns: 1fr;
+        gap: 4em;
     }
 
     .examplecontainers {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: start;
+        gap: 2em;
     }
 }
 
