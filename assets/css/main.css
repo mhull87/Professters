@@ -152,9 +152,8 @@ img {
     }
 }
 
-/*CARD GRID*/
+/*GRIDS*/
 @media screen and (min-width: 775px) {
-    /*GRID*/
     .container {
         display: grid;
         grid-template-columns: 2fr 3fr 2fr;
@@ -163,6 +162,12 @@ img {
 
     .cardTitle {
         margin-bottom: 3em;
+    }
+
+    .examplecontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
     }
 }
 
