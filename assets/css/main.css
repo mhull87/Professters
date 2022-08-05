@@ -166,8 +166,13 @@ img {
 
     .examplecontainer {
         display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .examplecontainers {
+        display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-items: center;
+        justify-items: start;
     }
 }
 
