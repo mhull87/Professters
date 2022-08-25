@@ -255,7 +255,7 @@ display: none;
 .hideu {
     display: none;
 }
-
+/*
 .fi:hover + .hideu {
     display: block;
 }
@@ -347,4 +347,4 @@ display: none;
 
 .image {
     margin-top: -260px;
-}
+}*/
