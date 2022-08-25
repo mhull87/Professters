@@ -131,9 +131,6 @@ a {
 
 /*IMAGES*/
 img {
-    width: 100%;
-    border: solid 2px var(--green);
-    border-radius: 8px;
     max-width: 800px;
 }
 
@@ -151,6 +148,7 @@ img {
 
 .imgcard {
     border: none;
+    width: 100%;
     max-width: 300px;
 }
 
@@ -222,6 +220,46 @@ img {
 }
 
 /*Stack*/
+.hidea {
+    display: none;
+}
+
+.on:hover + .hidea {
+    display: block;
+}
+
+.hidee {
+    display: none;
+}
+
+.tw:hover + .hidee {
+    display: block;
+}
+
+.hidei {
+display: none;
+}
+
+.th:hover + .hidei {
+    display: block;
+}
+
+.hideo {
+    display: none;
+}
+
+.fo:hover + .hideo {
+    display: block;
+}
+
+.hideu {
+    display: none;
+}
+
+.fi:hover + .hideu {
+    display: block;
+}
+
 .frame {
     width: 640px;
     height: 320px;
@@ -232,7 +270,6 @@ img {
 
 .image {
     position: absolute;
-    box-shadow: 5px 5px 20px #333333;
     border-radius: 4px;
     cursor: pointer;
     opacity: 0.7;
@@ -252,7 +289,6 @@ img {
 .title {
     width: 640px;
     height: 50px;
-    background: linear-gradient(to right,grey, black);
     position: absolute;
     margin-top: 320px;
     z-index: 1;
