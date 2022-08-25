@@ -1,11 +1,12 @@
 /*COLORS*/
 :root {
     --white: #ecf0f1;
-    --green: #1abc9c;
+    --green: #44aa43;
     --red: #e74c3c;
-    --blue: #3498db;
-    --purple: #9b59b6;
-    --orange: #e67e22;
+    --blue: #0a92da;
+    --purple: #c5a0e4;
+    --orange: #db3817;
+    --gray: #8d9898;
 }
 
 /*FONT*/
@@ -19,7 +20,7 @@ h1, h2, h3, .button, .font {
 body {
     font-size: 12px;
     font-family: sans-serif;
-    background: #2c3e50;
+    background: black;
     max-width: 1100px;
     margin: auto;
 }
@@ -50,6 +51,31 @@ a {
 
 .right {
     text-align: right;
+}
+
+#orangeglow {
+    box-shadow: inset 0 50px 50px -25px var(--orange);
+    border-radius: 150px;
+}
+
+#blueglow {
+    box-shadow: inset 0 50px 50px -25px var(--blue);
+    border-radius: 150px;
+}
+
+#grayglow {
+    box-shadow: inset 0 50px 50px -25px var(--gray);
+    border-radius: 150px;
+}
+
+#purpleglow {
+    box-shadow: inset 0 50px 50px -25px var(--purple);
+    border-radius: 150px;
+}
+
+#greenglow {
+    box-shadow: inset 0 50px 50px -25px var(--green);
+    border-radius: 150px;
 }
 
 /*BUTTON*/
