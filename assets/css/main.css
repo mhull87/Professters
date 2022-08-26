@@ -34,6 +34,7 @@ p {
     font-size: 1.15em;
     line-height: 1.5;
     margin-bottom: 1.5em;
+    margin: 2%;
 }
 
 li {
@@ -224,8 +225,9 @@ img {
 }
 
 .on:hover {
-    width: 220px;
+    transform: scale(1.2);
     cursor: pointer;
+    box-shadow: 0 0 35px var(--gray);
 }
 
 .hidee {
@@ -233,8 +235,9 @@ img {
 }
 
 .tw:hover {
-    width: 220px;
+    transform: scale(1.2);
     cursor: pointer;
+    box-shadow: 0 0 35px var(--gray);
 }
 
 .hidei {
@@ -242,8 +245,9 @@ display: none;
 }
 
 .th:hover {
-    width: 220px;
+    transform: scale(1.2);
     cursor: pointer;
+    box-shadow: 0 0 35px var(--gray);
 }
 
 .hideo {
@@ -251,8 +255,9 @@ display: none;
 }
 
 .fo:hover {
-    width: 220px;
+    transform: scale(1.2);
     cursor: pointer;
+    box-shadow: 0 0 35px var(--gray);
 }
 
 .hideu {
@@ -260,6 +265,7 @@ display: none;
 }
 
 .fi:hover {
-    width: 220px;
+    transform: scale(1.2);
     cursor: pointer;
+    box-shadow: 0 0 35px var(--gray);
 }
