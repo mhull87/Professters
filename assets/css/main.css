@@ -223,38 +223,43 @@ img {
     display: none;
 }
 
-.on:hover ~ .hidea {
-    display: block;
+.on:hover {
+    width: 220px;
+    cursor: pointer;
 }
 
 .hidee {
     display: none;
 }
 
-.tw:hover ~ .hidee {
-    display: block;
+.tw:hover {
+    width: 220px;
+    cursor: pointer;
 }
 
 .hidei {
 display: none;
 }
 
-.th:hover ~ .hidei {
-    display: block;
+.th:hover {
+    width: 220px;
+    cursor: pointer;
 }
 
 .hideo {
     display: none;
 }
 
-.fo:hover ~ .hideo {
-    display: block;
+.fo:hover {
+    width: 220px;
+    cursor: pointer;
 }
 
 .hideu {
     display: none;
 }
 
-.fi:hover ~ .hideu {
-    display: block;
+.fi:hover {
+    width: 220px;
+    cursor: pointer;
 }
