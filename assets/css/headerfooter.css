@@ -21,7 +21,7 @@ header {
 h1 {
     margin: 1.5em 0 0;
     align-self: end;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 900;
 }
 
@@ -51,11 +51,6 @@ nav {
 
 .hero {
     padding: 0 0 1em 1em;
-}
-
-.containerhero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 .containermeet {
@@ -226,6 +221,17 @@ nav {
             left: 420px;
             background-color: var(--orange);
         }
+}
+
+@media screen and (min-width: 700px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .containerhero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (min-width: 975px) {
