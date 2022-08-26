@@ -24,11 +24,11 @@ function toggle() {
 }
 
 function displaya() {
-    var diva = document.getElementById("orangeglow");
-    var dive = document.getElementById("blueglow");
-    var divi = document.getElementById("grayglow");
-    var divo = document.getElementById("purpleglow");
-    var divu = document.getElementById("greenglow");
+    var diva = document.getElementById("diva");
+    var dive = document.getElementById("dive");
+    var divi = document.getElementById("divi");
+    var divo = document.getElementById("divo");
+    var divu = document.getElementById("divu");
 
     if (diva.style.display === 'none') {
         diva.style.display = 'block';
@@ -46,11 +46,11 @@ function displaya() {
 }
 
 function displaye() {
-    var diva = document.getElementById("orangeglow");
-    var dive = document.getElementById("blueglow");
-    var divi = document.getElementById("grayglow");
-    var divo = document.getElementById("purpleglow");
-    var divu = document.getElementById("greenglow");
+    var diva = document.getElementById("diva");
+    var dive = document.getElementById("dive");
+    var divi = document.getElementById("divi");
+    var divo = document.getElementById("divo");
+    var divu = document.getElementById("divu");
 
     if (dive.style.display === 'none') {
         dive.style.display = 'block';
@@ -68,11 +68,11 @@ function displaye() {
 }
 
 function displayi() {
-    var diva = document.getElementById("orangeglow");
-    var dive = document.getElementById("blueglow");
-    var divi = document.getElementById("grayglow");
-    var divo = document.getElementById("purpleglow");
-    var divu = document.getElementById("greenglow");
+    var diva = document.getElementById("diva");
+    var dive = document.getElementById("dive");
+    var divi = document.getElementById("divi");
+    var divo = document.getElementById("divo");
+    var divu = document.getElementById("divu");
 
     if (divi.style.display === 'none') {
         divi.style.display = 'block';
@@ -90,11 +90,11 @@ function displayi() {
 }
 
 function displayo() {
-    var diva = document.getElementById("orangeglow");
-    var dive = document.getElementById("blueglow");
-    var divi = document.getElementById("grayglow");
-    var divo = document.getElementById("purpleglow");
-    var divu = document.getElementById("greenglow");
+    var diva = document.getElementById("diva");
+    var dive = document.getElementById("dive");
+    var divi = document.getElementById("divi");
+    var divo = document.getElementById("divo");
+    var divu = document.getElementById("divu");
 
     if (divo.style.display === 'none') {
         divo.style.display = 'block';
@@ -112,11 +112,11 @@ function displayo() {
 }
 
 function displayu() {
-    var diva = document.getElementById("orangeglow");
-    var dive = document.getElementById("blueglow");
-    var divi = document.getElementById("grayglow");
-    var divo = document.getElementById("purpleglow");
-    var divu = document.getElementById("greenglow");
+    var diva = document.getElementById("diva");
+    var dive = document.getElementById("dive");
+    var divi = document.getElementById("divi");
+    var divo = document.getElementById("divo");
+    var divu = document.getElementById("divu");
 
     if (divu.style.display === 'none') {
         divu.style.display = 'block';

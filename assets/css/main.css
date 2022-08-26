@@ -54,27 +54,27 @@ a {
     text-align: right;
 }
 
-#orangeglow {
+.orangeglow {
     box-shadow: inset 0 50px 50px -25px var(--orange);
     border-radius: 50px;
 }
 
-#blueglow {
+.blueglow {
     box-shadow: inset 0 50px 50px -25px var(--blue);
     border-radius: 50px;
 }
 
-#grayglow {
+.grayglow {
     box-shadow: inset 0 50px 50px -25px var(--gray);
     border-radius: 50px;
 }
 
-#purpleglow {
+.purpleglow {
     box-shadow: inset 0 50px 50px -25px var(--purple);
     border-radius: 50px;
 }
 
-#greenglow {
+.greenglow {
     box-shadow: inset 0 50px 50px -25px var(--green);
     border-radius: 50px;
 }
