@@ -234,7 +234,7 @@ img {
     display: none;
 }
 
-.tw:hover + .hidee {
+.tw:hover ~ .hidee {
     display: block;
 }
 
@@ -242,7 +242,7 @@ img {
 display: none;
 }
 
-.th:hover + .hidei {
+.th:hover ~ .hidei {
     display: block;
 }
 
@@ -250,7 +250,7 @@ display: none;
     display: none;
 }
 
-.fo:hover + .hideo {
+.fo:hover ~ .hideo {
     display: block;
 }
 
@@ -258,6 +258,6 @@ display: none;
     display: none;
 }
 
-.fi:hover + .hideu {
+.fi:hover ~ .hideu {
     display: block;
 }

@@ -122,13 +122,13 @@ function displayu() {
         divu.style.display = 'block';
         diva.style.display = 'none';
         dive.style.display = 'none';
-        divi.style.dispaly = 'none';
+        divi.style.display = 'none';
         divo.style.display = 'none';
     } else {
         divu.style.display = 'none';
         diva.style.display = 'none';
         dive.style.display = 'none';
-        divi.style.dispaly = 'none';
+        divi.style.display = 'none';
         divo.style.display = 'none';
     }
 }
