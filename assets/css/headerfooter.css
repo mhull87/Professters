@@ -20,9 +20,9 @@ header {
 
 h1 {
     margin: 1.5em 0 0;
-    text-align: center;
+    align-self: end;
     font-size: 2.5em;
-    text-shadow: 2px 2px 4px #000000;
+    font-weight: 900;
 }
 
 nav {
@@ -49,10 +49,12 @@ nav {
 
 .containerhero {
     display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .containermeet {
     display: grid;
+    grid-template-rows: 3fr 20px 3fr;
 }
 
 @media screen and (max-width: 615px) {
@@ -124,10 +126,6 @@ nav {
 }
 
 @media screen and (min-width: 615px) {
-    h1 {
-        font-size: 4em;
-    }
-
     #activehome {
         color: var(--green);
     }
@@ -226,7 +224,7 @@ nav {
 
 @media screen and (min-width: 975px) {
     h1 {
-        font-size: 6em;
+        font-size: 4em;
     }
 }
 
