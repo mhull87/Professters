@@ -164,7 +164,7 @@ img {
 
 .img350 {
     max-width: 350px;
-    margin-bottom: 5%;
+    margin-bottom: 175px;
 }
 
 .one, .two, .three, .four {
@@ -181,7 +181,22 @@ img {
     gap: 1em;
 }
 
+.smallview {
+    display: block;
+}
 
+.largeview {
+    display: none;
+}
+
+@media screen and (min-width: 550px) {
+    .smallview {
+        display: none;
+    }
+    .largeview {
+        display: block;
+    }
+}
 
 @media screen and (min-width: 615px) {
     h2 {
