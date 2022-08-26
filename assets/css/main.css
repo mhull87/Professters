@@ -133,6 +133,7 @@ a {
 /*IMAGES*/
 img {
     max-width: 800px;
+    width: 100%;
 }
 
 .imgdiv {
@@ -148,10 +149,13 @@ img {
 }
 
 .imgcard {
-    border: none;
-    width: 100%;
     max-width: 200px;
     margin-right: -100px;
+    margin-top: -175px;
+}
+
+.stack {
+    margin-right: 100px;
 }
 
 #imgcardI {
@@ -160,6 +164,7 @@ img {
 
 .img350 {
     max-width: 350px;
+    margin-bottom: 5%;
 }
 
 .one, .two, .three, .four {
