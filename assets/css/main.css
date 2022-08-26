@@ -154,6 +154,10 @@ img {
     margin-top: -175px;
 }
 
+.imgcardsm {
+    max-width: 200px;
+}
+
 .stack {
     margin-right: 100px;
 }
