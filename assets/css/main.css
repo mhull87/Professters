@@ -17,6 +17,10 @@ h1, h2, h3, .button, .font {
     color: var(--white);
 }
 
+h4 {
+    color: var(--purple);
+}
+
 body {
     font-size: 12px;
     font-family: sans-serif;
@@ -201,6 +205,7 @@ img {
     .smallview {
         display: none;
     }
+
     .largeview {
         display: block;
     }
@@ -269,7 +274,7 @@ img {
 }
 
 .hidei {
-display: none;
+    display: none;
 }
 
 .th:hover {
