@@ -22,3 +22,13 @@ function toggle() {
         close.innerHTML = 'Sign In';
     }
 }
+
+function displaya() {
+    var diva = document.getElementById("orangeglow");
+    if (diva.style.display === 'none') {
+        diva.style.display = 'block';
+    } else {
+        diva.style.display = 'none';
+    }
+}
+
