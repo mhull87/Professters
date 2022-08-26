@@ -171,6 +171,10 @@ img {
     margin-bottom: 175px;
 }
 
+.img350sm {
+    max-width: 350px;
+}
+
 .one, .two, .three, .four {
     padding: 3em 2em 1em;
 }
