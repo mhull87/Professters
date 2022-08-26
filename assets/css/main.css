@@ -226,7 +226,7 @@ img {
     display: none;
 }
 
-.on:hover + .hidea {
+.on:hover ~ .hidea {
     display: block;
 }
 
