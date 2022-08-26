@@ -47,6 +47,14 @@ nav {
     display: none;
 }
 
+.containerhero {
+    display: grid;
+}
+
+.containermeet {
+    display: grid;
+}
+
 @media screen and (max-width: 615px) {
     #activehome {
         background-color: var(--green);
@@ -237,7 +245,6 @@ footer {
     width: auto;
 }
 
-.contactbtn:hover {
-    box-shadow: rgba(215, 123, 252, 0.5) 0 3px 8px;
-}
-
+    .contactbtn:hover {
+        box-shadow: rgba(215, 123, 252, 0.5) 0 3px 8px;
+    }
