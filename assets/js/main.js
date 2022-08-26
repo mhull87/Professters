@@ -25,10 +25,110 @@ function toggle() {
 
 function displaya() {
     var diva = document.getElementById("orangeglow");
+    var dive = document.getElementById("blueglow");
+    var divi = document.getElementById("grayglow");
+    var divo = document.getElementById("purpleglow");
+    var divu = document.getElementById("greenglow");
+
     if (diva.style.display === 'none') {
         diva.style.display = 'block';
+        dive.style.display = 'none';
+        divi.style.display = 'none';
+        divo.style.display = 'none';
+        divu.style.display = 'none';
     } else {
         diva.style.display = 'none';
+        dive.style.display = 'none';
+        divi.style.display = 'none';
+        divo.style.display = 'none';
+        divu.style.display = 'none';
     }
 }
 
+function displaye() {
+    var diva = document.getElementById("orangeglow");
+    var dive = document.getElementById("blueglow");
+    var divi = document.getElementById("grayglow");
+    var divo = document.getElementById("purpleglow");
+    var divu = document.getElementById("greenglow");
+
+    if (dive.style.display === 'none') {
+        dive.style.display = 'block';
+        diva.style.display = 'none';
+        divi.style.display = 'none';
+        divo.style.display = 'none';
+        divu.style.display = 'none';
+    } else {
+        dive.style.display = 'none';
+        diva.style.display = 'none';
+        divi.style.display = 'none';
+        divo.style.display = 'none';
+        divu.style.display = 'none';
+    }
+}
+
+function displayi() {
+    var diva = document.getElementById("orangeglow");
+    var dive = document.getElementById("blueglow");
+    var divi = document.getElementById("grayglow");
+    var divo = document.getElementById("purpleglow");
+    var divu = document.getElementById("greenglow");
+
+    if (divi.style.display === 'none') {
+        divi.style.display = 'block';
+        diva.style.display = 'none';
+        dive.style.display = 'none';
+        divo.style.display = 'none';
+        divu.style.display = 'none';
+    } else {
+        divi.style.display = 'none';
+        diva.style.display = 'none';
+        dive.style.display = 'none';
+        divo.style.display = 'none';
+        divu.style.display = 'none';
+    }
+}
+
+function displayo() {
+    var diva = document.getElementById("orangeglow");
+    var dive = document.getElementById("blueglow");
+    var divi = document.getElementById("grayglow");
+    var divo = document.getElementById("purpleglow");
+    var divu = document.getElementById("greenglow");
+
+    if (divo.style.display === 'none') {
+        divo.style.display = 'block';
+        diva.style.display = 'none';
+        dive.style.display = 'none';
+        divi.style.display = 'none';
+        divu.style.display = 'none';
+    } else {
+        divo.style.display = 'none';
+        diva.style.display = 'none';
+        dive.style.display = 'none';
+        divi.style.display = 'none';
+        divu.style.display = 'none';
+    }
+}
+
+function displayu() {
+    var diva = document.getElementById("orangeglow");
+    var dive = document.getElementById("blueglow");
+    var divi = document.getElementById("grayglow");
+    var divo = document.getElementById("purpleglow");
+    var divu = document.getElementById("greenglow");
+
+    if (divu.style.display === 'none') {
+        divu.style.display = 'block';
+        diva.style.display = 'none';
+        dive.style.display = 'none';
+        divi.style.dispaly = 'none';
+        divo.style.display = 'none';
+    } else {
+        divu.style.display = 'none';
+        diva.style.display = 'none';
+        dive.style.display = 'none';
+        divi.style.dispaly = 'none';
+        divo.style.display = 'none';
+    }
+}
