@@ -149,7 +149,8 @@ img {
 .imgcard {
     border: none;
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
+    margin-right: -100px;
 }
 
 #imgcardI {
@@ -192,10 +193,6 @@ img {
         display: grid;
         grid-template-columns: 2fr 3fr 2fr;
         align-items: center;
-    }
-
-    .cardTitle {
-        margin-bottom: 3em;
     }
 
     .examplecontainer {
