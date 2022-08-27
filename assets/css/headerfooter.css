@@ -1,7 +1,4 @@
 /*HEADER*/
-header {
-    padding: 2em;
-}
 
 .signin {
     text-align: right;
@@ -25,14 +22,41 @@ h1 {
     font-weight: 900;
 }
 
+/*NAVIGATION*/
+
+.fixed {
+    background: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2%;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
+    position: sticky;
 }
 
     nav a {
         color: white;
         text-decoration: none;
+    }
+
+.active {
+    position: relative;
+}
+
+    .active::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        left: 0;
+        height: 5px;
+        border-radius: 2px;
+        background: linear-gradient(132deg, var(--darkpurple) 9.6%, var(--blue) 93.6%);
     }
 
 /*HERO*/
@@ -44,23 +68,6 @@ nav {
 .containermeet {
     display: grid;
     grid-template-rows: 3fr 20px 3fr;
-}
-
-@media screen and (max-width: 615px) {
-    #activehome {
-    }
-
-    #activedonate {
-    }
-
-    #activejoin {
-    }
-
-    #activenfts {
-    }
-
-    #activecontact {
-    }
 }
 
 @media screen and (min-width: 700px) {

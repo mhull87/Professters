@@ -2,33 +2,37 @@
 :root {
     --white: #ecf0f1;
     --green: #44aa43;
-    --red: #e74c3c;
     --blue: #0a92da;
     --purple: #c5a0e4;
+    --darkpurple: #960a8f;
     --orange: #db3817;
     --gray: #8d9898;
 }
 
 /*FONT*/
-h1, h2, h3, .button, .font {
+h1, h2, h3, .button, .font, nav {
     font-family: ethnocentric,sans-serif;
     font-weight: 200;
     font-style: normal;
     color: var(--white);
 }
 
-h4 {
-    color: var(--purple);
-    padding: 0;
-    margin: 0;
-}
-
 body {
     font-size: 12px;
     font-family: sans-serif;
     background: black;
+}
+
+main {
+    margin-top: 5%;
     max-width: 1100px;
     margin: auto;
+}
+
+h4 {
+    color: var(--purple);
+    padding: 0;
+    margin: 0;
 }
 
 section {
