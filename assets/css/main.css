@@ -21,10 +21,10 @@ body {
     font-size: 12px;
     font-family: sans-serif;
     background: black;
+    margin: 0;
 }
 
 main {
-    margin-top: 5%;
     max-width: 1100px;
     margin: auto;
 }
@@ -43,8 +43,7 @@ p {
     color: var(--white);
     font-size: 1.15em;
     line-height: 1.5;
-    margin-bottom: 1.5em;
-    margin: 2%;
+    margin: 2% 2% 1.5em 2%;
 }
 
 li {
@@ -214,6 +213,10 @@ img {
 
     .largeview {
         display: block;
+    }
+
+    #abovecards {
+        margin-bottom: 175px;
     }
 }
 
