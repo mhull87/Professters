@@ -97,12 +97,11 @@ button, .button {
 }
 
     .button:hover {
-        box-shadow: var(--darkpurple) 0 3px 8px;
+        box-shadow: var(--darkpurple) 3px 5px 15px 3px;
     }
 
 .donate {
-    text-align: right;
-    margin-right: 2%;
+    text-align: center;
 }
 
 /*IMAGES*/
