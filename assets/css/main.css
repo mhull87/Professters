@@ -2,11 +2,14 @@
 :root {
     --white: #ecf0f1;
     --green: #44aa43;
-    --blue: #0a92da;
+    --blue: #097dbb;
+    --darkblue: #23527c;
+    --tabblue: #0c6ea3;
     --purple: #c5a0e4;
-    --darkpurple: #960a8f;
+    --darkpurple: #9d0fe6;
     --orange: #db3817;
     --gray: #8d9898;
+    --black: rgb(7, 7, 8);
 }
 
 /*FONT*/
@@ -20,7 +23,7 @@ h1, h2, h3, .button, .font, nav {
 body {
     font-size: 12px;
     font-family: sans-serif;
-    background: black;
+    background: var(--black);
     margin: 0;
 }
 
@@ -53,6 +56,10 @@ li {
 a {
     text-decoration: none;
     color: var(--white);
+}
+
+div.nopad {
+    padding: 0;
 }
 
 .underline {
@@ -193,6 +200,7 @@ img {
     h3 {
         font-size: 1.5em;
     }
+
 }
 
 /*GRIDS*/

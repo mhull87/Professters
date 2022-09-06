@@ -8,7 +8,7 @@
 /*NAVIGATION*/
 
 .fixed {
-    background: black;
+    background: var(--black);
     position: fixed;
     width: 100%;
     top: 0;
@@ -39,6 +39,123 @@ nav {
         background: linear-gradient(132deg, var(--darkpurple) 9.6%, var(--blue) 93.6%);
     }
 
+    /*HAMBURGER*/
+@media screen and (max-width: 775px) {
+    .hidden {
+        display: none;
+    }
+
+    .hero {
+        margin-top: 40px;
+    }
+
+    .logo {
+    }
+
+    .nav {
+        width: 100%;
+        background-color: var(--black);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 3;
+    }
+
+    .logo,
+    #hamburger {
+        margin: 4%;
+    }
+
+    #hamburger {
+        opacity: 0.5;
+        cursor: pointer;
+        transition: opacity 0.25s linear;
+        width: clamp(1.5rem, 2vw + 1.1rem, 6rem);
+        height: clamp(2rem, 1.4vw + 1.7rem, 5rem);
+        display: flex;
+        align-items: center;
+    }
+
+        #hamburger:hover {
+            opacity: 1;
+        }
+
+        #hamburger div,
+        #hamburger div:after,
+        #hamburger div:before {
+            background-color: var(--white);
+            border-radius: 10px;
+            width: clamp(1.5rem, 2vw + 1.1rem, 6rem);
+            height: clamp(0.2rem, 0.3vw + 0.1rem, 0.8rem);
+            transition: all 0.15s linear;
+        }
+
+            #hamburger div:before,
+            #hamburger div:after {
+                content: "";
+                position: absolute;
+            }
+
+            #hamburger div:before {
+                transform: translateY(-200%);
+            }
+
+            #hamburger div:after {
+                transform: translateY(200%);
+            }
+
+        #hamburger.open div {
+            background: transparent;
+        }
+
+            #hamburger.open div:before {
+                transform: rotate(45deg);
+            }
+
+            #hamburger.open div:after {
+                transform: rotate(-45deg);
+            }
+
+    #overlay {
+        position: fixed;
+        width: 100%;
+        min-height: 100%;
+        background-color: var(--black);
+        z-index: 2;
+        transform: translateY(-100%);
+        transition: all 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #overlay.menu {
+            transform: translateY(0%);
+        }
+
+        #overlay a {
+            text-decoration: none;
+            color: var(--white);
+            font-size: clamp(1rem, 4.1vw + 0.2rem, 10rem);
+            margin: 2%;
+            opacity: 0.5;
+            transition: opacity 0.2s linear;
+        }
+
+            #overlay a:hover {
+                opacity: 1;
+            }
+}
+
+@media screen and (min-width: 700px) {
+    .hero {
+        margin-top: 85px;
+    }
+}
+
 /*HERO*/
 
 h1 {
@@ -50,8 +167,9 @@ h1 {
 
 .hero {
     padding: 0 0 1em 1em;
-    margin-top: 85px;
 }
+
+
 
 .containermeet {
     display: grid;

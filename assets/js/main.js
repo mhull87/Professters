@@ -1,3 +1,22 @@
+(() => {
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("overlay");
+    let open = false;
+
+    const change = () => {
+        if (!open) {
+            hamburger.classList.add("open");
+            menu.classList.add("menu");
+        } else {
+            hamburger.classList.remove("open");
+            menu.classList.remove("menu");
+        }
+        open = !open;
+    };
+
+    hamburger.addEventListener("click", change);
+})();
+
 function confirm() {
     if (document.getElementById('userpassword').value ==
         document.getElementById('passconfirm').value) {
