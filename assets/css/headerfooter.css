@@ -2,7 +2,7 @@
 
 .signin {
     text-align: right;
-    margin: 1em 0 0 0;
+    margin: 0 2% 0 0;
 }
 
 /*NAVIGATION*/
@@ -38,6 +38,14 @@ nav {
         border-radius: 2px;
         background: linear-gradient(132deg, var(--darkpurple) 9.6%, var(--blue) 93.6%);
     }
+    
+    .logo {
+        max-width: 75px;
+    }
+
+    .hidenav {
+        display: none;
+    }
 
     /*HAMBURGER*/
 @media screen and (max-width: 775px) {
@@ -45,12 +53,15 @@ nav {
         display: none;
     }
 
-    .hero {
-        margin-top: 40px;
+    .hidenav {
+        display: block;
     }
 
-    .logo {
+    .hero {
+        margin-top: 30px;
     }
+
+
 
     .nav {
         width: 100%;
@@ -65,7 +76,7 @@ nav {
 
     .logo,
     #hamburger {
-        margin: 4%;
+        margin: 2%;
     }
 
     #hamburger {
@@ -76,6 +87,7 @@ nav {
         height: clamp(2rem, 1.4vw + 1.7rem, 5rem);
         display: flex;
         align-items: center;
+        padding-right: 3.5em;
     }
 
         #hamburger:hover {
@@ -130,6 +142,7 @@ nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-family: ethnocentric,sans-serif;
     }
 
         #overlay.menu {
