@@ -21,6 +21,8 @@ input, textarea, select {
 
 .icons {
     padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
     .icons li a {
