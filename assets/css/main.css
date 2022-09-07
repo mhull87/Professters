@@ -196,15 +196,15 @@ fieldset {
 }
 
 .fieldset1 {
-    background: content-box center no-repeat url(/assets/images/gen1robotsm.png);
+    background: content-box center no-repeat url('/assets/images/gen1robotsm.png');
 }
 
 .fieldset2 {
-    background: content-box center no-repeat url(/assets/images/gen2robotsm.png);
+    background: content-box center no-repeat url('/assets/images/gen2robotsm.png');
 }
 
 .fieldset3 {
-    background: content-box center no-repeat url(/assets/images/gen3robotsm.png);
+    background: content-box center url('/assets/images/gen3robotsm.png') no-repeat;
 }
 
 legend {
