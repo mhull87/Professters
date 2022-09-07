@@ -25,10 +25,15 @@ body {
     font-family: sans-serif;
     background: var(--black);
     margin: 0;
+    background-attachment: fixed;
+    background-image: url("../images/backdrop.svg");
+    background-position: 150% 100%;
+    background-repeat: no-repeat;
 }
 
 main {
     max-width: 1100px;
+    margin: auto;
 }
 
 h4 {
@@ -50,6 +55,10 @@ p {
 
 .center {
     text-align: center;
+}
+
+.bold300 {
+    font-weight: 300;
 }
 
 li {
@@ -182,17 +191,28 @@ img {
     display: none;
 }
 
+/*GEN CARDS*/
+
 .carddiv {
-    display: grid;
     margin: auto;
-    width: 175px;
-    height: 180px;
+}
+
+.cardsdiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardp {
+    width: 170px;
+    text-align: center;
 }
 
 fieldset {
     border: 8px rgb(141 152 152 / 50%) solid;
     border-radius: 8px;
     transform: rotate(180deg);
+    width: 140px;
+    height: 150px;
 }
 
 .fieldset1 {
@@ -212,7 +232,7 @@ legend {
     color: var(--white);
 }
 
-fieldset>legend {
+fieldset > legend {
     transform: rotate(180deg);
     text-align: center;
 }
@@ -220,8 +240,6 @@ fieldset>legend {
 .card {
     max-width: 75px;
 }
-
-
 
 @media screen and (min-width: 550px) {
     .smallview {
@@ -249,7 +267,6 @@ fieldset>legend {
     h3 {
         font-size: 1.5em;
     }
-
 }
 
 /*GRIDS*/
@@ -270,6 +287,10 @@ fieldset>legend {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2em;
+    }
+
+    .carddiv {
+        margin: -6em 0 0;
     }
 }
 

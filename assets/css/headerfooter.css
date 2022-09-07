@@ -38,16 +38,16 @@ nav {
         border-radius: 2px;
         background: linear-gradient(132deg, var(--darkpurple) 9.6%, var(--blue) 93.6%);
     }
-    
-    .logo {
-        max-width: 75px;
-    }
 
-    .hidenav {
-        display: none;
-    }
+.logo {
+    max-width: 75px;
+}
 
-    /*HAMBURGER*/
+.hidenav {
+    display: none;
+}
+
+/*HAMBURGER*/
 @media screen and (max-width: 775px) {
     .hidden {
         display: none;
@@ -78,7 +78,7 @@ nav {
 
     .logo,
     #hamburger {
-        margin: 2%;
+        margin: 0 2%;
     }
 
     #hamburger {
@@ -183,8 +183,6 @@ h1 {
 .hero {
     padding: 0 0 1em 1em;
 }
-
-
 
 .containermeet {
     display: grid;
