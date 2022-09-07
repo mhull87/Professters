@@ -27,7 +27,7 @@ body {
     margin: 0;
     background-attachment: fixed;
     background-image: url("../images/backdrop.svg");
-    background-position: 150% 100%;
+    background-position: -150% 100%;
     background-repeat: no-repeat;
 }
 
