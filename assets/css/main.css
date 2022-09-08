@@ -365,6 +365,10 @@ fieldset > legend {
     text-align: center;
 }
 
+    .overlaptitle > h2 {
+        font-weight: 300;
+    }
+
 .tiercontainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
