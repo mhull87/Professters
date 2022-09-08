@@ -27,7 +27,7 @@ body {
     margin: 0;
     background-attachment: fixed;
     background-image: url("../images/backdrop.svg");
-    background-position: -150% 100%;
+    background-position: 200% 100%;
     background-repeat: no-repeat;
 }
 
@@ -126,7 +126,6 @@ button, .button {
 
 /*IMAGES*/
 img {
-    max-width: 800px;
     width: 100%;
 }
 
@@ -149,7 +148,7 @@ img {
 }
 
 .imgcardsm {
-    max-width: 200px;
+    max-width: 100px;
 }
 
 .stack {
@@ -353,4 +352,64 @@ fieldset > legend {
     transform: scale(1.2);
     cursor: pointer;
     box-shadow: 0 0 35px var(--gray);
+}
+
+/******JOIN******/
+.tiercontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-gap: 2%;
+    align-items: start;
+    justify-items: center;
+}
+
+.tier {
+    background: var(--gray);
+    border-left: 3px solid var(--blue);
+    border-right: 3px solid var(--blue);
+    margin: -2.4em 0 0;
+    max-width: 135px;
+    text-align: center;
+}
+
+    .tier > h3 {
+        font-size: 2.4em;
+        font-weight: 900;
+        text-align: center;
+        background: linear-gradient(132deg, var(--darkpurple) 9.6%, var(--blue) 93.6%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .tier > h4 {
+        color: #714195;
+        margin: 2%;
+        font-size: 3em;
+        font-style: italic;
+    }
+
+    .tier > p {
+        color: var(--black);
+        margin: 0;
+    }
+
+.uptriangle {
+    border-left: solid 70px transparent;
+    border-right: solid 70px transparent;
+    border-bottom: solid 70px var(--gray);
+    height: 0;
+    width: 0;
+}
+
+.lowtriangle {
+    border-left: solid 70px transparent;
+    border-right: solid 70px transparent;
+    border-top: solid 70px var(--gray);
+    height: 0;
+    width: 0;
+}
+
+.tiersignup {
+    margin: 8em 2em;
+    text-align: center;
 }

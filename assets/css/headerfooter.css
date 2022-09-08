@@ -61,10 +61,6 @@ nav {
         display: block;
     }
 
-    .hero {
-        margin-top: 30px;
-    }
-
     .active::before {
         top: 105%;
     }
@@ -169,12 +165,6 @@ nav {
             }
 }
 
-@media screen and (min-width: 700px) {
-    .hero {
-        margin-top: 85px;
-    }
-}
-
 /*HERO*/
 
 h1 {
@@ -182,6 +172,9 @@ h1 {
     align-self: end;
     font-size: 2em;
     font-weight: 900;
+    background: linear-gradient(132deg, var(--darkpurple) 9.6%, var(--blue) 93.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero {
@@ -193,14 +186,32 @@ h1 {
     grid-template-rows: 3fr 20px 3fr;
 }
 
-@media screen and (min-width: 700px) {
-    h1 {
-        font-size: 2em;
+@media screen and (max-width: 700px) {
+    /*NAV MARGIN*/
+    .hero {
+        margin-top: 50px;
     }
 
+    .navmargin {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 700px) {
     .containerhero {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    /*NAV MARGIN*/
+    .hero {
+        margin-top: 85px;
     }
 }
 
