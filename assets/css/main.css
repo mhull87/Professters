@@ -355,6 +355,16 @@ fieldset > legend {
 }
 
 /******JOIN******/
+
+.overlaptitle {
+    z-index: 1;
+    position: absolute;
+    margin-top: 6em;
+    background: rgb(141 152 152 / 80%);
+    padding: 1.2em 1.2em 3em;
+    text-align: center;
+}
+
 .tiercontainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -412,4 +422,11 @@ fieldset > legend {
 .tiersignup {
     margin: 8em 2em;
     text-align: center;
+}
+
+@media screen and (max-width: 370px) {
+    .overlaptitle {
+        position: inherit;
+        margin-top: 2em;
+    }
 }
