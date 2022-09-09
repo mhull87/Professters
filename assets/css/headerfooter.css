@@ -59,6 +59,7 @@ nav {
 
     .hidenav {
         display: block;
+        width: 100vw;
     }
 
     .active::before {
@@ -89,7 +90,6 @@ nav {
         height: clamp(2rem, 1.4vw + 1.7rem, 5rem);
         display: flex;
         align-items: center;
-        padding-right: 3.5em;
     }
 
         #hamburger:hover {
@@ -166,19 +166,12 @@ nav {
 }
 
 /*HERO*/
-
-h1 {
-    margin: 1.5em 0 0;
-    align-self: end;
-    font-size: 2em;
-    font-weight: 900;
-    background: linear-gradient(132deg, var(--darkpurple) 9.6%, var(--blue) 93.6%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .hero {
     padding: 0 0 1em 1em;
+}
+
+.containermeet > h1 {
+    margin: 1.5em 0 0;
 }
 
 .containermeet {
@@ -193,7 +186,13 @@ h1 {
     }
 
     .navmargin {
-        margin-top: 10px;
+        margin-top: 85px;
+    }
+}
+
+@media screen and (max-width: 334px) {
+    .tiersignup {
+        margin: 30em 0 0;
     }
 }
 

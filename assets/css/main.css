@@ -20,6 +20,20 @@ h1, h2, h3, .button, .font, nav {
     color: var(--white);
 }
 
+h1 {
+    margin: 1.5em 0 0 2%;
+    align-self: end;
+    font-size: 2em;
+    font-weight: 900;
+    background: linear-gradient(132deg, var(--darkpurple) 9.6%, var(--blue) 93.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h4, p {
+    font-family: commuters-sans, sans-serif;
+}
+
 body {
     font-size: 12px;
     font-family: sans-serif;
@@ -48,9 +62,10 @@ section {
 
 p {
     color: var(--white);
-    font-size: 1.15em;
-    line-height: 1.5;
+    font-size: 1.3em;
+    line-height: 1.8;
     margin: 2% 2% 1.5em 2%;
+    font-weight: 200;
 }
 
 .center {
@@ -63,12 +78,17 @@ p {
 
 li {
     list-style: none;
+    color: var(--purple);
 }
 
 a {
     text-decoration: none;
     color: var(--white);
 }
+
+    a:hover {
+        color: var(--darkpurple);
+    }
 
 div.nopad {
     padding: 0;
@@ -113,10 +133,12 @@ button, .button {
     border-radius: 15px;
     background: linear-gradient(132deg, var(--darkpurple) 9.6%, var(--blue) 93.6%);
     padding: 12px 20px;
+    border: none;
 }
 
     .button:hover {
-        box-shadow: var(--darkpurple) 3px 5px 15px 3px;
+        box-shadow: var(--darkpurple) 3px 3px 15px .3px;
+        color: var(--black);
     }
 
 .donate {
@@ -168,7 +190,11 @@ img {
     max-width: 350px;
 }
 
-.one, .two, .three, .four {
+.one {
+    padding: 0 2em 1em;
+}
+
+.two, .three, .four {
     padding: 3em 2em 1em;
 }
 
@@ -398,7 +424,7 @@ fieldset > legend {
     .tier > h4 {
         color: #714195;
         margin: 2%;
-        font-size: 3em;
+        font-size: 2.2em;
         font-style: italic;
     }
 
@@ -422,6 +448,47 @@ fieldset > legend {
     height: 0;
     width: 0;
 }
+
+.righttriangle {
+    border-top: solid 70px transparent;
+    border-bottom: solid 70px transparent;
+    border-right: solid 70px var(--gray);
+    height: 0;
+    width: 0;
+}
+
+.lefttriangle {
+    border-top: solid 70px transparent;
+    border-bottom: solid 70px transparent;
+    border-left: solid 70px var(--gray);
+    height: 0;
+    width: 0;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.bannerinner {
+    background: var(--gray);
+    height: 135px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-top: 3px solid var(--blue);
+    border-bottom: 3px solid var(--blue);
+    width: 100%;
+    justify-content: space-around;
+}
+
+    .bannerinner > h3 {
+        font-weight: 400;
+        background: linear-gradient(132deg, var(--darkpurple) 9.6%, var(--blue) 93.6%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
 .tiersignup {
     margin: 8em 2em;

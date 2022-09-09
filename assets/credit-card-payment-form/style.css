@@ -14,7 +14,7 @@
     justify-content: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    font-family: 'Raleway';
+    font-family: commuters-sans, sans-serif;
 }
 
 .payment-title {
@@ -22,18 +22,22 @@
 }
 
 .form-container .field-container:first-of-type {
-    grid-area: name;
+    grid-area: amount;
 }
 
 .form-container .field-container:nth-of-type(2) {
-    grid-area: number;
+    grid-area: name;
 }
 
 .form-container .field-container:nth-of-type(3) {
-    grid-area: expiration;
+    grid-area: number;
 }
 
 .form-container .field-container:nth-of-type(4) {
+    grid-area: expiration;
+}
+
+.form-container .field-container:nth-of-type(5) {
     grid-area: security;
 }
 
@@ -50,8 +54,12 @@
     display: grid;
     grid-column-gap: 10px;
     grid-template-columns: auto auto;
-    grid-template-rows: 90px 90px 90px;
-    grid-template-areas: "name name""number number""expiration security";
+    grid-template-rows: 90px 90px 90px 90px;
+    grid-template-areas:
+        "amount amount"
+        "name name"
+        "number number"
+        "expiration security";
     max-width: 400px;
     padding: 20px;
     color: #707070;
@@ -184,11 +192,11 @@
 }
 
 .creditcard .grey {
-    fill: #bdbdbd;
+    fill: var(--darkpurple);
 }
 
 .creditcard .greydark {
-    fill: #616161;
+    fill: var(--blue);
 }
 
 /* FRONT OF CARD */
@@ -197,7 +205,7 @@
 }
 
 #cardfront .st2 {
-    fill: #FFFFFF;
+    fill: silver;
 }
 
 #cardfront .st3 {
