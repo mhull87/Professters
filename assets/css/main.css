@@ -450,17 +450,17 @@ fieldset > legend {
 }
 
 .righttriangle {
-    border-top: solid 70px transparent;
-    border-bottom: solid 70px transparent;
-    border-right: solid 70px var(--gray);
+    border-top: solid 50px transparent;
+    border-bottom: solid 50px transparent;
+    border-right: solid 50px var(--gray);
     height: 0;
     width: 0;
 }
 
 .lefttriangle {
-    border-top: solid 70px transparent;
-    border-bottom: solid 70px transparent;
-    border-left: solid 70px var(--gray);
+    border-top: solid 50px transparent;
+    border-bottom: solid 50px transparent;
+    border-left: solid 50px var(--gray);
     height: 0;
     width: 0;
 }
@@ -468,12 +468,12 @@ fieldset > legend {
 .banner {
     display: flex;
     align-items: center;
-    margin: 1em 0;
+    margin: 2em 0;
 }
 
 .bannerinner {
     background: var(--gray);
-    height: 135px;
+    height: 95px;
     display: flex;
     align-items: center;
     text-align: center;

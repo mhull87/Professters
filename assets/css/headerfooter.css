@@ -212,6 +212,10 @@ nav {
     .hero {
         margin-top: 85px;
     }
+
+    .navmargin {
+        margin: 110px auto 0;
+    }
 }
 
 @media screen and (min-width: 975px) {
