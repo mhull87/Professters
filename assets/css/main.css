@@ -52,8 +52,9 @@ main {
 
 h4 {
     color: var(--purple);
-    padding: 0;
+    padding: 0 2%;
     margin: 0;
+    line-height: 1.4;
 }
 
 section {
@@ -100,6 +101,11 @@ div.nopad {
 
 .right {
     text-align: right;
+}
+
+.studentteacherlists {
+    display: flex;
+    justify-content: space-around;
 }
 
 .orangeglow {
