@@ -109,6 +109,10 @@ div.nopad {
     justify-content: space-around;
 }
 
+.lists > h4:nth-child(2n+0) {
+    color: var(--blue);
+}
+
 .orangeglow {
     box-shadow: inset 0 50px 50px -25px var(--orange);
     border-radius: 50px;
