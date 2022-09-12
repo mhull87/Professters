@@ -2,7 +2,7 @@
 
 .signin {
     text-align: right;
-    margin: 1% 2% 0 0;
+    margin: 1% 4% 0 0;
 }
 
 /*NAVIGATION*/
@@ -215,6 +215,16 @@ nav {
 
     .navmargin {
         margin: 110px auto 0;
+    }
+}
+
+@media screen and (min-width: 775px) {
+    .signin {
+        margin: 1% 0 0;
+    }
+
+    .logolgnav {
+        margin: -20px 0 0;
     }
 }
 
