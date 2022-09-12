@@ -74,7 +74,8 @@ p {
 }
 
 .bold300 {
-    font-weight: 300;
+    color: var(--blue);
+    font: 300 2em commuters-sans, sans-serif;
 }
 
 li {
