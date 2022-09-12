@@ -107,6 +107,7 @@ div.nopad {
 .studentteacherlists {
     display: flex;
     justify-content: space-around;
+    margin: 8em 0 4em;
 }
 
 .lists > h4:nth-child(2n+0) {
@@ -202,11 +203,11 @@ img {
 }
 
 .one {
-    padding: 0 2em 1em;
+    padding: 3em 2em 1em;
 }
 
 .two, .three, .four {
-    padding: 3em 2em 1em;
+    padding: 8em 2em 1em;
 }
 
 .signup {

@@ -15,23 +15,35 @@ input, textarea, select {
     width: 100%;
 }
 
+    input[type=submit] {
+        margin: 2em 0;
+    }
+
 .contact {
     padding: 0;
 }
 
-.icons {
+.icons, .iconscontact {
     padding: 0;
     display: flex;
     justify-content: space-between;
 }
 
-    .icons li a {
+    .icons li a, .iconscontact li a {
         color: var(--blue);
     }
 
         .icons li a:hover {
             color: var(--darkpurple);
         }
+
+.iconscontact {
+    justify-content: flex-start;
+}
+
+    .iconscontact li {
+        padding: 0 2em 0 0;
+    }
 
 .red {
     color: var(--red);
