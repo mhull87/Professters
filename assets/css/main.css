@@ -2,14 +2,19 @@
 :root {
     --white: #ecf0f1;
     --green: #44aa43;
-    --blue: #097dbb;
+    /*--blue: #097dbb;*/
+    --blue: #4977e9;
     --darkblue: #23527c;
     --tabblue: #0c6ea3;
-    --purple: #c5a0e4;
-    --darkpurple: #9d0fe6;
+    /*--purple: #c5a0e4;*/
+    --purple: #3de1d3;
+    /*--darkpurple: #9d0fe6;*/
+    --darkpurple: #8860d0;
     --orange: #db3817;
-    --gray: #8d9898;
-    --black: rgb(7, 7, 8);
+    /*--gray: #8d9898;*/
+    --gray: #c1c8e4;
+    /*--black: rgb(7, 7, 8);*/
+    --black: #072636;
 }
 
 /*FONT*/
@@ -17,7 +22,7 @@ h1, h2, h3, .button, .font, nav {
     font-family: ethnocentric,sans-serif;
     font-weight: 200;
     font-style: normal;
-    color: var(--white);
+    color: var(--black);
 }
 
 h1 {
@@ -32,12 +37,13 @@ h1 {
 
 h4, p {
     font-family: commuters-sans, sans-serif;
+    color: var(--white);
 }
 
 body {
     font-size: 12px;
     font-family: sans-serif;
-    background: var(--black);
+    background: var(--white);
     margin: 0;
     background-attachment: fixed;
     background-image: url("../images/backdrop.svg");
