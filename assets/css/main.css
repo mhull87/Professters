@@ -156,6 +156,9 @@ button, .button {
     background: linear-gradient(132deg, var(--darkpurple) 9.6%, var(--blue) 93.6%);
     padding: 12px 20px;
     border: none;
+    /*added*/
+    font-weight: 400;
+    color: var(--white);
 }
 
     .button:hover {

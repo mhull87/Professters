@@ -1,6 +1,6 @@
 label {
     display: block;
-    color: var(--white);
+    /*color: var(--white);*/
     margin: .7em 0;
     font-weight: bold;
 }
