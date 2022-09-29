@@ -20,9 +20,11 @@
 /*FONT*/
 h1, h2, h3, .button, .font, nav {
     font-family: ethnocentric,sans-serif;
-    font-weight: 200;
+    /*font-weight: 200;*/
+    font-weight: 800;
     font-style: normal;
-    color: var(--black);
+    /*color: var(--black);*/
+    color: var(--purple);
 }
 
 h1 {
@@ -37,7 +39,6 @@ h1 {
 
 h4, p {
     font-family: commuters-sans, sans-serif;
-    color: var(--white);
 }
 
 body {
@@ -70,7 +71,8 @@ section {
 }
 
 p {
-    color: var(--white);
+    /*color: var(--white);*/
+    color: var(--black);
     font-size: 1.3em;
     line-height: 1.8;
     margin: 2% 2% 1.5em 2%;
