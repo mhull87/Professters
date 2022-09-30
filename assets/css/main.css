@@ -41,7 +41,7 @@ h2 {
     transform: skew(-10deg, -1deg);
 }
 
-h2background {
+.h2background {
     background: var(--blue);
     transform: skew(10deg, 1deg);
     padding: 1em;
