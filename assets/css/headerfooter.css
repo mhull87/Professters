@@ -189,7 +189,7 @@ nav {
 }
 
 .heroimg {
-    transform: skew(-10deg, -15deg);
+    transform: skew(-20deg, -15deg);
 }
 
 @media screen and (max-width: 700px) {

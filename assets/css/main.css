@@ -37,6 +37,17 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+h2 {
+    transform: skew(-10deg, -1deg);
+}
+
+h2background {
+    background: var(--blue);
+    transform: skew(10deg, 1deg);
+    padding: 1em;
+    width: fit-content;
+}
+
 h4, p {
     font-family: commuters-sans, sans-serif;
 }
