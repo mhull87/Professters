@@ -183,6 +183,13 @@ nav {
     grid-template-rows: 3fr 20px 3fr;
 }
 
+.imgback {
+    width: 150px;
+    height: 100px;
+    transform: skew(20deg);
+    background: var(--purple);
+}
+
 @media screen and (max-width: 700px) {
     /*NAV MARGIN*/
     .hero {
