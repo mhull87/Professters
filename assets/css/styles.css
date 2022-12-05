@@ -588,6 +588,10 @@ textarea.form-control {
     margin-bottom: -1em;
 }
 
+.commentfootermargin {
+    margin: 2em 0 14em;
+}
+
 ul.comments {
     list-style-type: none;
     padding: 0px;
@@ -675,11 +679,6 @@ table tbody td a {
 
 .table-hover>tbody>tr:hover {
     background-color: var(--black);
-}
-
-/*******FOOTER*******/
-footer {
-    margin: 2em 0 14em;
 }
 
 @media screen and (min-width: 850px) {
