@@ -677,6 +677,11 @@ table tbody td a {
     background-color: var(--black);
 }
 
+/*******FOOTER*******/
+footer {
+    margin: 2em 0 8em;
+}
+
 @media screen and (min-width: 850px) {
     .zoom {
         transition: transform .3s;
