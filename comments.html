@@ -1,0 +1,439 @@
+<html>
+<head>
+
+    <title>Flasky - Post</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKOhmf+9sZ3/in9u/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALOupf+1qJP/gnFm/5hSH//Vwq7/yb2q/5aKe/+1qJP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAt6ya/+PZzP/Pxrj/yb2q/3RFI/+TWCb/1cKu/8zArv+Winv/qp2K/8O0n/+bkYL/AAAAAAAAAAAAAAAAU01Ff83Br//Jvar/yb2q/8/GuP+Kqq//jVMj/9nJtf/Zzbv/k4Zz/7Wok/+7rpv/w7Sf/8m9qv8AAAAAAAAAAFNNRX/b1Mn/5N3T/19pcf/h08H/WjMU/1xPQ//X0cb/2c27/6GTgv/Jvar/z8a4/8zArv/Pxrj/kI6L/wAAAABTTUV/6eXe/6GTgv8zLCf/4dfJ/1g2JP9GLSD/zs/K/+PZzP98eHD/qp2K/7GijP/j2cz/4dPB/wAAAAAAAAAAU01Ff+7q5P/Zzbv/7N/Y/97Wyv/q5Nz/6t/U/97Wyv+traz/p3pf/7dLF/9mYmz/m5GC/7uum/8AAAAAAAAAAFNNRX/n4Nb/5uDW/+bg1v/m4Nb/4dfJ/+bg1v+1qpn/3cC0/79KF/+1UCX/s0wk/6NDI/9oaWn/AAAAAAAAAAC6q6P/wL62//X08v/q5Nz/5+La/+vm4P+zrqX/0MvE/8tNGP/GWCv/tVEq/6pMK/+dSCz/lUMq/405Hf8AAAAAAAAAAK2UjP+2tbD/+fXz/+3p4v+traz/3MzL/9hFFf/RWy3/vVEn/7JOK/+lTjH/mUQq/45DLf+WTjv/AAAAAAAAAAAAAAAAlX59/6O2w/+hrrj/39PT/8pCCP/LWCb/xVIp/7VRKv+qTCv/mUQq/5NGMP+lZlP/AAAAAAAAAAAAAAAAAAAAAAAAAACHWEn/2MfF/8RJAv+/Shf/ukwe/7VQJf+hRSr/o0os/5VDKv+rcV//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACVYlL/eTsn/6NKLP+hRSr/pUkm/5lCJv+1gXH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANlPK/9OIw//AAAAAE43L39VOjJ/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP4/AADgHwAAgAcAAIADAACAAQAAgAMAAIADAACAAwAAAAEAAIABAADAAwAA4AcAAPgPAAD8/wAA//8AAA==" type="image/x-icon">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKOhmf+9sZ3/in9u/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALOupf+1qJP/gnFm/5hSH//Vwq7/yb2q/5aKe/+1qJP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAt6ya/+PZzP/Pxrj/yb2q/3RFI/+TWCb/1cKu/8zArv+Winv/qp2K/8O0n/+bkYL/AAAAAAAAAAAAAAAAU01Ff83Br//Jvar/yb2q/8/GuP+Kqq//jVMj/9nJtf/Zzbv/k4Zz/7Wok/+7rpv/w7Sf/8m9qv8AAAAAAAAAAFNNRX/b1Mn/5N3T/19pcf/h08H/WjMU/1xPQ//X0cb/2c27/6GTgv/Jvar/z8a4/8zArv/Pxrj/kI6L/wAAAABTTUV/6eXe/6GTgv8zLCf/4dfJ/1g2JP9GLSD/zs/K/+PZzP98eHD/qp2K/7GijP/j2cz/4dPB/wAAAAAAAAAAU01Ff+7q5P/Zzbv/7N/Y/97Wyv/q5Nz/6t/U/97Wyv+traz/p3pf/7dLF/9mYmz/m5GC/7uum/8AAAAAAAAAAFNNRX/n4Nb/5uDW/+bg1v/m4Nb/4dfJ/+bg1v+1qpn/3cC0/79KF/+1UCX/s0wk/6NDI/9oaWn/AAAAAAAAAAC6q6P/wL62//X08v/q5Nz/5+La/+vm4P+zrqX/0MvE/8tNGP/GWCv/tVEq/6pMK/+dSCz/lUMq/405Hf8AAAAAAAAAAK2UjP+2tbD/+fXz/+3p4v+traz/3MzL/9hFFf/RWy3/vVEn/7JOK/+lTjH/mUQq/45DLf+WTjv/AAAAAAAAAAAAAAAAlX59/6O2w/+hrrj/39PT/8pCCP/LWCb/xVIp/7VRKv+qTCv/mUQq/5NGMP+lZlP/AAAAAAAAAAAAAAAAAAAAAAAAAACHWEn/2MfF/8RJAv+/Shf/ukwe/7VQJf+hRSr/o0os/5VDKv+rcV//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACVYlL/eTsn/6NKLP+hRSr/pUkm/5lCJv+1gXH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANlPK/9OIw//AAAAAE43L39VOjJ/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP4/AADgHwAAgAcAAIADAACAAQAAgAMAAIADAACAAwAAAAEAAIABAADAAwAA4AcAAPgPAAD8/wAA//8AAA==" rel="icon" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dropzone@5.2.0/dist/min/dropzone.min.css" type="text/css">
+
+    <style>
+        .dropzone {
+            border: 2px dashed #0087F7;
+            margin: 10%;
+            min-height: 215px;
+        }
+    </style>
+    <meta http-equiv="refresh" content="900">
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+
+</head>
+<body>
+
+    <div class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/"><img class="logo" src="/static/images/logo.png"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+                    <li class="nomargin"><a href="/user/mhull87">Profile</a></li>
+                    <li><a href="/group/find">Groups</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="/moderate">Moderate Comments</a></li>
+
+
+                    <li class="dropdown nomargin">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="https://secure.gravatar.com/avatar/56ebe745dd22651aed85e0359fc06d00?s=18&amp;d=identicon&amp;r=g">
+                            Account <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/auth/change-password">Change Password</a></li>
+                            <!--<li><a href="/group/find">Find Groups</a></li>-->
+                            <li><a href="/files">Uploads</a></li>
+                            <li><a href="/auth/change_email">Change Email</a></li>
+                            <li class="nomargin"><a href="/auth/logout">Log Out</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+
+
+        <div class="page-header">
+
+        </div>
+        <div class="max-width800">
+            <ul class="posts">
+
+
+                <li class="post">
+
+                    <div class="dropdown nomargin post-admin">
+                        <a href="#" class="dropdown-toggle label label-danger" data-toggle="dropdown">
+                            Admin <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/edit/516">
+                                    <span class="label label-default">Edit [Admin]</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/delete/516">
+                                    <span class="label label-danger">Delete [Admin]</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="post-header">
+                        <div class="post-date"><span class="" data-timestamp="2022-11-08T20:58:16Z" data-function="fromNow" data-refresh="0" style="">a month ago</span></div>
+                        <div class="post-group">
+
+                            [ <a href=" /group/lookup/50 ">Melissa's List</a> ]
+
+                        </div>
+                        <div class="post-authorimg flexsmallgap">
+                            <div class="post-thumbnail">
+                                <a href="/user/mhull87">
+                                    <img class="img-rounded profile-thumbnail" src="https://secure.gravatar.com/avatar/56ebe745dd22651aed85e0359fc06d00?s=40&amp;d=identicon&amp;r=g">
+                                </a>
+                            </div>
+
+                            <div class="post-author">
+                                <a href="/user/mhull87">mhull87</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-content">
+                        <a class="plain" href="/post/516">
+                            <div class="post-body">
+                                <h3>Ideas / General</h3>
+
+                                <ul>
+                                    <li><b>MAKE FOOTER</b></li>
+                                    <li>Set up comments for editing, deleting, and nested comments</li>
+                                    <li>File organization for templates in server</li>
+                                    <li>Reorganize CSS to separate files</li>
+                                    <li>Consolidate menu bar...change password and email to profile</li>
+                                    <li>Search for people</li>
+                                    <li>Maybe only one search page for both groups and people?</li>
+                                    <li>Groups can be classes</li>
+                                    <li>? Buttons in comments for editing, deleting, and nested comments</li>
+                                    <li>? Links expand too far in post box and cannot hit submit button</li>
+                                    <li>? cannot click on firehose group to avoid error</li>
+                                </ul>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="flex post-footer">
+                        <div>
+
+                            <a href="/edit/516">
+                                <span class="label label-default">Edit</span>
+                            </a> |
+                            <a href="/delete/516">
+                                <span class="label label-danger">Delete</span>
+                            </a>
+
+                        </div>
+                        <div>
+                            <a href="/post/516">
+                                <span class="label label-default">Permalink</span>
+                            </a> |
+
+                            <a href="/post/516#comments">
+                                <span class="label label-primary">3 Comments</span>
+                            </a>
+
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+            <h4 id="comments">Comments</h4>
+
+            <div class="comment-form">
+
+                <form action="" method="post" class="form" role="form">
+                    <input id="csrf_token" name="csrf_token" type="hidden" value="ImRhNDlhMDA5NTkwNmQ0ZGIzNTI1ODkyNTZiMzhjZjFmZWQ0ZWQ4MzEi.Y45Dig.Oj-JfTzVd2taaNK0SEqakq5TS18">
+
+
+
+
+
+
+
+
+                    <div class="form-group  required">
+                        <label class="control-label" for="body">Enter your comment</label>
+
+                        <div class="flask-pagedown"><textarea class="form-control flask-pagedown-input" cols="120" id="flask-pagedown-body" name="body" required="" rows="20"></textarea></div>
+                        <div class="flask-pagedown-preview" id="flask-pagedown-body-preview"></div>
+                        <script type="text/javascript">
+f = function() {
+    if (typeof flask_pagedown_converter === "undefined")
+        flask_pagedown_converter = Markdown.getSanitizingConverter().makeHtml;
+    var textarea = document.getElementById("flask-pagedown-body");
+    var preview = document.getElementById("flask-pagedown-body-preview");
+    textarea.onkeyup = function() { preview.innerHTML = flask_pagedown_converter(textarea.value); }
+    textarea.onkeyup.call(textarea);
+}
+if (document.readyState === 'complete')
+    f();
+else if (window.addEventListener)
+    window.addEventListener("load", f, false);
+else if (window.attachEvent)
+    window.attachEvent("onload", f);
+else
+    f();
+                        </script>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <input class="btn btn-default" id="submit" name="submit" type="submit" value="Submit">
+
+
+
+
+
+
+
+                </form>
+            </div>
+
+            <ul class="comments">
+
+                <li class="comment">
+                    <div class="comment-thumbnail">
+                        <a href="/user/sparseMatrix">
+                            <img class="img-rounded profile-thumbnail" src="https://secure.gravatar.com/avatar/af818a0d043aa92bd9c494e198919d1f?s=40&amp;d=identicon&amp;r=g">
+                        </a>
+                    </div>
+                    <div class="comment-content">
+                        <div class="comment-date"><span class="" data-timestamp="2022-11-08T21:16:55Z" data-function="fromNow" data-refresh="0" style="">a month ago</span></div>
+                        <div class="comment-author"><a href="/user/sparseMatrix">sparseMatrix</a></div>
+                        <div class="comment-body">
+
+
+
+                            If you use markdown notation as a method of presenting your links, like  [link text] (https: //<a href="http://some.long.url.com" rel="nofollow">some.long.url.com</a>), except leave out those spaces, you'll get something like <a href="https://some.long.url.com" rel="nofollow">link text</a>
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="flex comment-footer">
+                        <div>
+
+                        </div>
+                        <div>
+                            <a href="/post/511">
+                                <span class="label label-default">Permalink</span>
+                            </a> |
+                            <a href="/post/511#comments">
+                                <span class="label label-primary">Comments</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="comment">
+                    <div class="comment-thumbnail">
+                        <a href="/user/sparseMatrix">
+                            <img class="img-rounded profile-thumbnail" src="https://secure.gravatar.com/avatar/af818a0d043aa92bd9c494e198919d1f?s=40&amp;d=identicon&amp;r=g">
+                        </a>
+                    </div>
+                    <div class="comment-content">
+                        <div class="comment-date"><span class="" data-timestamp="2022-11-08T21:21:02Z" data-function="fromNow" data-refresh="0" style="">a month ago</span></div>
+                        <div class="comment-author"><a href="/user/sparseMatrix">sparseMatrix</a></div>
+                        <div class="comment-body">
+
+
+
+                            Also if by 'classes' you mean instructional classes, say, like for the professter's site, yes, that would be a group that is private/hidden/invite only, owned by the professter in charge of that group/class.
+
+                            The invite-only part depends on a method that doesn't exist yet, involving some system-level direct messages. The plan is to implement some other features on the DM, like invitation to groups, and, well, direct messages :P
+
+                            It could also be used for deadline reminders and the like. The whole thing could terminate in that same flash method that is used to notify you when you have made or updated a group or post or comment.
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="flex comment-footer">
+                        <div>
+
+                        </div>
+                        <div>
+                            <a href="/post/512">
+                                <span class="label label-default">Permalink</span>
+                            </a> |
+                            <a href="/post/512#comments">
+                                <span class="label label-primary">Comments</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="comment">
+                    <div class="comment-thumbnail">
+                        <a href="/user/mhull87">
+                            <img class="img-rounded profile-thumbnail" src="https://secure.gravatar.com/avatar/56ebe745dd22651aed85e0359fc06d00?s=40&amp;d=identicon&amp;r=g">
+                        </a>
+                    </div>
+                    <div class="comment-content">
+                        <div class="comment-date"><span class="" data-timestamp="2022-11-09T21:53:15Z" data-function="fromNow" data-refresh="0" style="">a month ago</span></div>
+                        <div class="comment-author"><a href="/user/mhull87">mhull87</a></div>
+                        <div class="comment-body">
+
+
+
+                            For the links, I had to use "overflow-wrap: anywhere" on the markdown preview area. Then it will break the text to a new line instead of forcing it to grow off the screen.
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="flex comment-footer">
+                        <div>
+
+                            <a href="/edit/526">
+                                <span class="label label-default">Edit</span>
+                            </a> |
+                            <a href="/delete/526">
+                                <span class="label label-danger">Delete</span>
+                            </a>
+
+                        </div>
+                        <div>
+                            <a href="/post/526">
+                                <span class="label label-default">Permalink</span>
+                            </a> |
+                            <a href="/post/526#comments">
+                                <span class="label label-primary">Comments</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="pagination">
+
+            <ul class="pagination">
+                <li class="disabled">
+                    <a href="#">
+                        «
+                    </a>
+                </li>
+
+
+
+                <li class="active">
+                    <a href="/post/516?page=1#comments">1</a>
+                </li>
+
+
+
+                <li class="disabled">
+                    <a href="#">
+                        »
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous"></script>
+
+    <script>
+moment.locale("en");
+function flask_moment_render(elem) {{
+    const timestamp = moment(elem.dataset.timestamp);
+    const func = elem.dataset.function;
+    const format = elem.dataset.format;
+    const timestamp2 = elem.dataset.timestamp2;
+    const no_suffix = elem.dataset.nosuffix;
+    const units = elem.dataset.units;
+    let args = [];
+    if (format)
+        args.push(format);
+    if (timestamp2)
+        args.push(moment(timestamp2));
+    if (no_suffix)
+        args.push(no_suffix);
+    if (units)
+        args.push(units);
+    elem.textContent = timestamp[func].apply(timestamp, args);
+    elem.classList.remove('flask-moment');
+    elem.style.display = "";
+}}
+function flask_moment_render_all() {{
+    const moments = document.querySelectorAll('.flask-moment');
+    moments.forEach(function(moment) {{
+        flask_moment_render(moment);
+        const refresh = moment.dataset.refresh;
+        if (refresh && refresh > 0) {{
+            (function(elem, interval) {{
+                setInterval(function() {{
+                    flask_moment_render(elem);
+                }}, interval);
+            }})(moment, refresh);
+        }}
+    }})
+}}
+document.addEventListener("DOMContentLoaded", flask_moment_render_all);
+    </script>
+
+
+
+
+</body>
+</html>
