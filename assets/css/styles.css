@@ -584,6 +584,10 @@ textarea.form-control {
     height: 115px;
 }
 
+#comments {
+    margin-bottom: -1em;
+}
+
 ul.comments {
     list-style-type: none;
     padding: 0px;
@@ -593,10 +597,6 @@ ul.comments {
 ul.comments li.comment {
     padding: 2em;
     border-bottom: 1px solid var(--gray);
-}
-
-ul.comments li.comment:nth-child(1) {
-    border-top: 1px solid var(--white);
 }
 
 ul.comments li.comment:hover {
