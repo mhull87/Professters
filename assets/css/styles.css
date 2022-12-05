@@ -573,10 +573,15 @@ textarea.form-control {
     left: 0;
     background: var(--black);
     z-index: 100;
+    width: 100%;
 }
 
-.comment-form .form .from-group .flask-pagedown textarea {
+.comment-form .form .form-group .flask-pagedown textarea {
     height: 34px;
+}
+
+.comment-form .from .form-group .flask-pagedown textarea:active {
+    height: 115px;
 }
 
 ul.comments {
