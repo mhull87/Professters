@@ -571,6 +571,12 @@ textarea.form-control {
     position: fixed;
     bottom: 0;
     left: 0;
+    background: var(--black);
+    z-index: 100;
+}
+
+.comment-form .form .from-group .flask-pagedown textarea {
+    height: 34px;
 }
 
 ul.comments {
@@ -614,7 +620,7 @@ div.comment-content {
 }
 
 div.comment-form {
-    margin: 16px 0px 16px 32px;
+    margin: 2%;
 }
 
 .comment-footer {
@@ -708,6 +714,11 @@ table tbody td a {
 
     h3 {
 	font-size: 1.6em;
+    }
+
+    .posts {
+        margin: 0px;
+        padding: 0px;
     }
 }
 
