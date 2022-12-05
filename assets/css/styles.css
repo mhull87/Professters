@@ -571,7 +571,7 @@ textarea.form-control {
     position: fixed;
     bottom: 0;
     left: 0;
-    background: var(--black);
+    background: #222;
     z-index: 100;
     width: 100%;
 }
