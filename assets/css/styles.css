@@ -580,7 +580,7 @@ textarea.form-control {
     height: 34px;
 }
 
-.comment-form .form .form-group .flask-pagedown textarea:active {
+.comment-form .form .form-group .flask-pagedown textarea:focus {
     height: 115px;
 }
 
