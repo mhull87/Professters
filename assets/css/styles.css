@@ -679,7 +679,7 @@ table tbody td a {
 
 /*******FOOTER*******/
 footer {
-    margin: 2em 0 8em;
+    margin: 2em 0 14em;
 }
 
 @media screen and (min-width: 850px) {
@@ -765,6 +765,12 @@ footer {
         margin: 0;
     }
 
+}
+
+@media screen and (max-width: 350px) {
+    .comment-footer {
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 300px) {
