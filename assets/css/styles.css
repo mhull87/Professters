@@ -580,9 +580,17 @@ textarea.form-control {
     height: 34px;
 }
 
-.comment-form .form .form-group .flask-pagedown textarea:focus {
-    height: 115px;
+    .comment-form .form .form-group .flask-pagedown textarea:focus {
+        height: 115px;
+    }
+
+.comment-form .form #submit {
+    display: hidden;
 }
+
+    .comment-form .form #submit:focus {
+        display: block;
+    }
 
 #comments {
     margin-bottom: -1em;
