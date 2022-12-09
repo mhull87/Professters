@@ -585,7 +585,7 @@ textarea.form-control {
     }
 
 .comment-form .form #submit {
-    display: hidden;
+    display: none;
 }
 
     .comment-form .form #submit:focus {
