@@ -1,5 +1,7 @@
 *.opendb
 
+.vs/*
+*.wsuo
 /.vs
 /.vs/Flasky/FileContentIndex
 /.vs/Flasky/v17/Browse.VC.db
