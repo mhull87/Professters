@@ -576,7 +576,7 @@ textarea.form-control {
     width: 100%;
 }
 
-.stickycommentbox:active {
+.stickycommentbox:focus {
     bottom: 0;
 }
 
