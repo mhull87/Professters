@@ -569,7 +569,7 @@ textarea.form-control {
 
 .stickycommentbox {
     position: fixed;
-    bottom: -65px;
+    bottom: -55px;
     left: 0;
     background: #222;
     z-index: 100;
@@ -593,7 +593,7 @@ textarea.form-control {
 }
 
 .commentfootermargin {
-    margin: 0 0 14em;
+    margin: 0 0 130px;
 }
 
 ul.comments {
