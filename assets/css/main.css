@@ -55,7 +55,7 @@ h4, p {
 body {
     font-size: 12px;
     font-family: sans-serif;
-    background: var(--darkpurple);
+    background: var(--white);
     margin: 0;
     background-attachment: fixed;
     background-image: url("../images/backdrop.svg");
@@ -107,7 +107,7 @@ li {
 
 a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--darkpurple);
 }
 
     a:hover {
