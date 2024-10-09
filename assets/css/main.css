@@ -55,7 +55,7 @@ h4, p {
 body {
     font-size: 12px;
     font-family: sans-serif;
-    background: var(--white);
+    background: var(--darkpurple);
     margin: 0;
     background-attachment: fixed;
     background-image: url("../images/backdrop.svg");
